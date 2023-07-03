@@ -49,7 +49,7 @@ function SkillsContainer() {
 
 
   return (
-    <div className='flex md:flex-row flex-col md:space-x-20 space-y-4'>
+    <div className='flex md:flex-row flex-col md:space-x-20 space-y-4 md:space-y-0 md:items-start'>
         <div className='flex flex-col items-start'>
             <div className='flex flex-row items-center hover:text-[#7ce38b] cursor-pointer w-44' onClick={()=>{setLangToggle(prev => !prev)}}>
                 <div className='w-12 flex flex-row items-center'>
