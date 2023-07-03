@@ -13,18 +13,19 @@ const userData = {
     },
     experiences: [
         {
-            role: "",
-            company: "",
-            period: "",
+            role: "Software Engineer Intern",
+            company: "Trilogy Technologies",
+            period: "May 2023 - Aug 2023",
             skills: {
-                Frontend: [],
-                Backend: [],
+                Frontend: ["React", "Pygame"],
+                Backend: ["MS Azure", "Flask", "PostgreSQL", "Docker", "C/C++"],
 
             },
             concise: "",
             points: [
-                "<strong></strong>",
-                ""
+                "Designed and built backend architecture single-handedly with MS Azure IoTEdge and Functions to handle high volume data processing and scalability for IoT monitoring.",
+                "Developed a full-stack web application for an MNC to monitor and analyse IoT sensors using React, Flask and PostgreSQL with analytical tools.",
+                "Prototyped a coordinate tracker from scratch using Ultra-Wideband technology and ESP32 for high precision location calculations with a Pygame GUI"
             ],
 
         }
@@ -36,23 +37,34 @@ const userData = {
     projects: [
         {
             title: 'trippin',
-            desc: 'testesttestteajskdahssad',
-            image: '1'
+            desc: 'A collaborative trip planner web app designed to help users plan location-based itineraries',
+            image: '/trippin.jpg',
+            url: 'https://trippin-web.vercel.app/'
         },
         {
             title: 'officequest',
-            desc: 'testesttesttedsadssadsad',
-            image: '2'
+            sub: 'DSTA Code_EXP 2023',
+            desc: `A mobile app which gamifies the office worker experience with a gacha and reward tier system`,
+            image: '/officeq.png',
+            url: 'https://github.com/bentohset/dsta-officequest'
         },
         {
             title: 'mykampung',
-            desc: 'testeasdsasaddadskdahssad',
-            image: '3'
+            sub: 'SUTD What the Hack 2022 Winner',
+            desc: 'A mobile app designed to help residents within HDBs to connect with their neighbours',
+            image: '/myKampungApp.png',
+            url: 'https://github.com/bentohset/sutdwth-mykampung'
         },
         {
-            title: 'thriftr',
-            desc: 'testeggdgdsfkdahssad',
-            image: '4'
+            title: 'developer portfolio',
+            desc: 'My personal portfolio site to learn threeJS',
+            image: '',
+            url: ''
+        },
+        {
+            title: 'food recommender',
+            desc: 'Work in progress!',
+            image: ''
         },
     ]
 
