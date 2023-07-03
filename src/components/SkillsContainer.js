@@ -55,22 +55,22 @@ function SkillsContainer() {
                 <div className='w-12 flex flex-row items-center'>
                     {langToggle ? (
                         <>
-                            <BsChevronDown className='font-bold text-md dark:text-[#89929b]'/>
+                            <BsChevronDown className='font-bold text-md dark:text-[#89929b] text-[#21262d]'/>
                             <FaFolderOpen className='mx-2 text-[#faa356]'/>
                         </>
                     ):(
                         <>
-                            <BsChevronRight className='font-bold text-md dark:text-[#89929b]'/>
+                            <BsChevronRight className='font-bold text-md dark:text-[#89929b] text-[#21262d]'/>
                             <FaFolder className='mx-2 text-[#faa356] text-sm'/>
                         </>
                     )}
                     </div>
                     
                     
-                    <p className=''>languages</p>
+                    <p className='disable-text-selection'>languages</p>
                 </div>
             {langToggle && <div className='flex flex-row mt-1'>
-                <div className='ml-1 h-auto border-r-[1px] dark:border-[#89929b]'></div>
+                <div className='ml-1 h-auto border-r-[1px] dark:border-[#89929b] border-[#21262d]'></div>
                 <div className='flex flex-col ml-8 '>
                     {userData.skills.languages.map((obj,index) => (
                         <SkillsLabel text={obj} key={obj} Logo={logoLang[index]} />
@@ -86,20 +86,20 @@ function SkillsContainer() {
                 <div className='w-12 flex flex-row items-center'>
                 {frameToggle ? (
                     <>
-                        <BsChevronDown className='font-bold text-md dark:text-[#89929b]'/>
+                        <BsChevronDown className='font-bold text-md dark:text-[#89929b] text-[#21262d]'/>
                         <FaFolderOpen className='mx-2 text-[#faa356]'/>
                     </>
                 ):(
                     <>
-                        <BsChevronRight className='font-bold text-md dark:text-[#89929b]'/>
+                        <BsChevronRight className='font-bold text-md dark:text-[#89929b] text-[#21262d]'/>
                         <FaFolder className='mx-2 text-[#faa356] text-sm'/>
                     </>
                 )}
                 </div>
-                <p className=''>frameworks</p>
+                <p className='disable-text-selection'>frameworks</p>
             </div>
             {frameToggle && <div className='flex flex-row mt-1'>
-                <div className='ml-1 h-auto border-r-[1px] dark:border-[#89929b]'></div>
+                <div className='ml-1 h-auto border-r-[1px] dark:border-[#89929b] border-[#21262d]'></div>
                 <div className='flex flex-col ml-8'>
                     {userData.skills.frameworks.map((obj,index) => (
                         <SkillsLabel text={obj} key={obj} Logo={logoFrame[index]} />
@@ -115,20 +115,20 @@ function SkillsContainer() {
                 <div className='w-12 flex flex-row items-center'>
                 {dbToggle ? (
                     <>
-                        <BsChevronDown className='font-bold text-md dark:text-[#89929b]'/>
+                        <BsChevronDown className='font-bold text-md dark:text-[#89929b] text-[#21262d]'/>
                         <FaFolderOpen className='mx-2 text-[#faa356]'/>
                     </>
                 ):(
                     <>
-                        <BsChevronRight className='font-bold text-md dark:text-[#89929b]'/>
+                        <BsChevronRight className='font-bold text-md dark:text-[#89929b] text-[#21262d]'/>
                         <FaFolder className='mx-2 text-[#faa356] text-sm'/>
                     </>
                 )}
                 </div>
-                <p className=''>database/cloud</p>
+                <p className='disable-text-selection'>database/cloud</p>
             </div>
             {dbToggle && <div className='flex flex-row mt-1'>
-                <div className='ml-1 h-auto border-r-[1px] dark:border-[#89929b]'></div>
+                <div className='ml-1 h-auto border-r-[1px] dark:border-[#89929b] border-[#21262d]'></div>
                 <div className='flex flex-col ml-8'>
                     {userData.skills.database.map((obj,index) => (
                         <SkillsLabel text={obj} key={obj} Logo={logoDb[index]} />
@@ -144,21 +144,21 @@ function SkillsContainer() {
                 <div className='w-12 flex flex-row items-center'>
                 {toolToggle ? (
                     <>
-                        <BsChevronDown className='font-bold text-md dark:text-[#89929b]'/>
+                        <BsChevronDown className='font-bold text-md dark:text-[#89929b] text-[#21262d]'/>
                         <FaFolderOpen className='mx-2 text-[#faa356]'/>
                     </>
                 ):(
                     <>
-                        <BsChevronRight className='font-bold text-md dark:text-[#89929b]'/>
+                        <BsChevronRight className='font-bold text-md dark:text-[#89929b] text-[#21262d]'/>
                         <FaFolder className='mx-2 text-[#faa356] text-sm'/>
                     </>
                 )}
                 </div>
-                <p className=''>tools</p>
+                <p className='disable-text-selection'>tools</p>
                 
             </div>
             {toolToggle && <div className='flex flex-row mt-1'>
-                <div className='ml-1 h-auto border-r-[1px] dark:border-[#89929b]'></div>
+                <div className='ml-1 h-auto border-r-[1px] dark:border-[#89929b] border-[#21262d]'></div>
                 <div className='flex flex-col ml-8'>
                     {userData.skills.tools.map((obj,index) => (
                         <SkillsLabel text={obj} key={obj} Logo={logoTools[index]} />
