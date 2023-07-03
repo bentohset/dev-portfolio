@@ -160,19 +160,28 @@ function Navbar() {
           href="/about"
           className="text-base font-normal text-gray-600 dark:text-gray-300"
         >
-          About
+          {router.asPath == '/about' && (
+            `//`
+          )}
+          about
         </Link>
         <Link
           href="/projects"
           className="text-base font-normal text-gray-600 dark:text-gray-300"
         >
-          Projects
+          {router.asPath == '/projects' && (
+            `//`
+          )}
+          projects
         </Link>
         <Link
           href="/experiences"
           className="text-base font-normal text-gray-600 dark:text-gray-300"
         >
-          Experience
+          {router.asPath == '/experiences' && (
+            `//`
+          )}
+          experiences
         </Link>
       </div>
     </nav>

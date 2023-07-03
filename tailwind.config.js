@@ -22,7 +22,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      divideColor: ['group-hover'],
+      translate: ['group-hover', 'hover'],
+    },
     display: ["responsive", "group-hover", "group-focus"],
   },
   plugins: [],

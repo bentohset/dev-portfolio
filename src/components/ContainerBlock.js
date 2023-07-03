@@ -44,7 +44,7 @@ function ContainerBlock({ children, ...customMeta }) {
             </Head>
             <main className="dark:bg-gray-800 w-full">
                 <Navbar />
-                <div className='bg-[#F1F1F1] dark:bg-gray-900 h-screen z-10 px-10 dark:text-[#ecf2f8] text-[#21262d]'>{children}</div>
+                <div className='bg-[#F1F1F1] dark:bg-gray-900 h-full md:h-screen z-10 px-10 dark:text-[#ecf2f8] text-[#21262d]'>{children}</div>
             </main>
         </div>
     )
