@@ -32,7 +32,8 @@ const userData = {
     ],
     about: {
         title: 'Aspiring Software Engineer',
-        bio: "I am a penultimate year <span style='color: #fa7970;'}>Computer Engineering</span> student at the National University of Singapore (NUS) with a minor in <span style='color: #fa7970;'}>Data Engineering</span>. I have a keen interest in fullstack development, machine learning, databases and everything in between!"
+        bio: "I am a penultimate year <span style='color: #fa7970;'}>Computer Engineering</span> student at the National University of Singapore (NUS) with a minor in <span style='color: #fa7970;'}>Data Engineering</span>. I have a keen interest in fullstack development, machine learning, databases and everything in between!",
+        iLove: ["building things", "simplicity", "basketball", "elegant software", "software for good"]
     },
     projects: [
         {
