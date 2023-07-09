@@ -2,6 +2,8 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
+import userData from '@/constants/data';
+import { FaEnvelope, FaGithub, FaLink, FaLinkedin } from 'react-icons/fa'
 
 function Navbar() {
     const router = useRouter()
@@ -121,10 +123,16 @@ function Navbar() {
 
         
         <div className="space-x-4 flex flex-row items-center">
+          <a href={userData.contacts.github} target='__blank'>
+            <FaGithub className='dark:text-[#c6cdd5] text-[#89929b] hover:text-[#21262d] dark:hover:text-[#ecf2f8]'/>
+          </a>
+          <a href={userData.contacts.linkedin} target='__blank'>
+            <FaLinkedin className='dark:text-[#c6cdd5] text-[#89929b] hover:text-[#21262d] dark:hover:text-[#ecf2f8]'/>
+          </a>
           <button
             aria-label="Toggle Dark Mode"
             type="button"
-            className="w-10 h-10 p-3 rounded focus:outline-none"
+            className="w-6 h-6 p-1 rounded focus:outline-none items-center justify-center flex"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           >
             {mounted && (
