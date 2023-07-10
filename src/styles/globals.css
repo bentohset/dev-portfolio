@@ -72,3 +72,15 @@ blue:
   -ms-user-select: none; /* IE*/
   user-select: none; /* Standard syntax */
 }
+
+.type::after {
+  content: '|';
+  color: var(--gitwhite); /* <---- this is what you're looking for: set a custom cursor color */
+  animation: cursor 1.1s infinite step-start;
+}
+ 
+@keyframes cursor {
+  50% {
+    opacity: 0;
+  }
+}

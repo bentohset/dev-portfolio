@@ -1,19 +1,35 @@
 import ContainerBlock from '@/components/ContainerBlock'
+import Typewriter from '@/components/Typewriter';
+import Model from '@/components/three/Model'
+import { useEffect, useState, useRef } from 'react'
 
 
 export default function Home() {
-  return (
-    <section className=''>
+  const [text, setText] = useState('')
+  const inputElement = useRef(null);
+  useEffect(() => {
+    if (inputElement.current) {
+      inputElement.current.focus();
+    }
+  }, []);
+  const handleInputBlur = (event) => {
+    event.preventDefault();
+    inputElement.current.focus();
+  };
 
-    
-      <div className="flex md:flex-row flex-col justify-center items-center h-screen">
-        <div className="w-full md:w-1/2 lg:p-20 py-4 ml-6 flex flex-col justify-center items-start text-3xl">
-          <h1 className='text-left'>Hello world. I am <span className='text-[#fa7970]'>Benjamin Toh.</span></h1>
-          <p className='text-left'>I love building things.</p>
+  return (
+    <section className='h-screen'>
+      <div className="flex md:flex-row flex-col justify-center items-center h-full md:relative w-full pb-14">
+        <div className="md:absolute md:right-20 md:w-1/2 w-full h-full md:py-4 justify-center flex">
+          <Model textInput={text}/>
         </div>
-        <div className="w-full md:w-1/2 lg:p-20 px-10 py-4 text-center">
-          threejs
+        <div className="absolute w-fit md:ml-6 flex flex-col justify-center items-start md:text-3xl xl:text-4xl z-50 md:left-36 text-2xl bottom-40 md:bottom-96 left-10">
+          <h1 className='text-left'>Hello world. </h1>
+          <p className='text-left'>I am <span className='text-[#fa7970]'>Benjamin Toh.</span></p>
+          <p className='text-left'>I love <Typewriter/></p>
+          <input className='hidden' ref={inputElement} value={text} onChange={(e)=>{setText(e.target.value)}} onBlur={handleInputBlur}/>
         </div>
+        
       </div>
     </section>
   )
