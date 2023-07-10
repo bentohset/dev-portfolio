@@ -21,7 +21,7 @@ const userData = {
                 Backend: ["MS Azure", "Flask", "PostgreSQL", "Docker", "C/C++"],
 
             },
-            concise: "",
+            concise: "Built monitoring system to ingest data from IoT devices and transformed into an insightful dashboard. Prototyped with Ultra-Wideband upcoming technology to localize coordinates.",
             points: [
                 "Designed and built backend architecture single-handedly with MS Azure IoTEdge and Functions to handle high volume data processing and scalability for IoT monitoring.",
                 "Developed a full-stack web application for an MNC to monitor and analyse IoT sensors using React, Flask and PostgreSQL with analytical tools.",
@@ -59,8 +59,8 @@ const userData = {
         {
             title: 'developer portfolio',
             desc: 'My personal portfolio site to learn threeJS',
-            image: '',
-            url: ''
+            image: '/devportfolio.jpg',
+            url: 'https://github.com/bentohset/dev-portfolio'
         },
         {
             title: 'food recommender',
