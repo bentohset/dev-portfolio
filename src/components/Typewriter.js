@@ -3,10 +3,10 @@ import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 
 function Typewriter() {
-    const seq = userData.about.iLove
-    const insertSeq = (arr, element) => {
-        return arr.flatMap((item, index) => [item, element])
-    }
+  const seq = userData.about.iLove
+  const insertSeq = (arr, element) => {
+    return arr.flatMap((item, index) => [item, element])
+  }
 
 
   return (
@@ -18,7 +18,7 @@ function Typewriter() {
         className='type'
         cursor={false}
     />
-  )
+  ) 
 }
 
 export default Typewriter

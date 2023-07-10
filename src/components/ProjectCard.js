@@ -9,7 +9,7 @@ function ProjectCard({project}) {
             </div>
             <p className='dark:text-[#faa356] dark:bg-inherit text-xl mt-2 bg-[#faa356] text-black w-fit px-2 rounded-md dark:px-0'>{project.title}</p>
             <p className='dark:text-[#ecf2f8] text-sm'>{project.sub}</p>
-            <p className='text-[#89929b] text-justify mt-1'>{project.desc}</p>
+            <p className='dark:text-[#89929b] text-[#21262d] text-justify mt-1'>{project.desc}</p>
         </div>
     </a>
   )
