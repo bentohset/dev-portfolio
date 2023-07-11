@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { BsChevronDown, BsChevronRight } from 'react-icons/bs'
 import { FaDocker, FaFigma, FaFolder, FaFolderOpen, FaGitAlt, FaSwift } from 'react-icons/fa'
-import { BiLogoJavascript, BiLogoPython, BiLogoCPlusPlus, BiLogoJava, BiLogoHtml5, BiLogoCss3, BiLogoReact, BiLogoFlask, BiLogoTailwindCss, BiLogoNodejs, BiLogoMongodb, BiLogoPostgresql, BiLogoGoogleCloud } from 'react-icons/bi'
-import { TbBrandReactNative } from 'react-icons/tb'
+import { BiLogoJavascript, BiLogoPython, BiLogoCPlusPlus, BiLogoJava, BiLogoHtml5, BiLogoCss3, BiLogoReact, BiLogoFlask, BiLogoTailwindCss, BiLogoNodejs, BiLogoMongodb, BiLogoPostgresql, BiLogoGoogleCloud, BiLogoKubernetes } from 'react-icons/bi'
+import { TbBrandReactNative, TbBrandThreejs } from 'react-icons/tb'
 import { SiExpress, SiMicrosoftazure, SiNextdotjs } from 'react-icons/si'
 import SkillsLabel from './SkillsLabel'
 import userData from '@/constants/data'
@@ -27,12 +27,14 @@ function SkillsContainer() {
         BiLogoNodejs,
         SiExpress,
         FaSwift,
+        TbBrandThreejs
     ]
 
     const logoTools = [
         FaGitAlt,
         FaDocker,
         FaFigma,
+        BiLogoKubernetes
     ]
 
     const logoDb = [

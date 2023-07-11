@@ -7,8 +7,8 @@ const userData = {
     },
     skills: {
         languages: ['C/C++', 'Python', 'Javascript', 'Java', 'HTML', 'CSS', 'Swift'],
-        frameworks: ['React', 'React Native', 'Next.js', 'Flask', 'TailwindCSS', 'Nodejs', 'Express', 'SwiftUI'],
-        tools: ['Git/Github', 'Docker', 'Figma'],
+        frameworks: ['React', 'React Native', 'Next.js', 'Flask', 'TailwindCSS', 'Nodejs', 'Express', 'SwiftUI', 'ThreeJS'],
+        tools: ['Git/Github', 'Docker', 'Figma', 'Kubernetes'],
         database:['MongoDB', 'PostgreSQL', 'Google Cloud', 'MS Azure'],
     },
     experiences: [
@@ -23,9 +23,9 @@ const userData = {
             },
             concise: "Built monitoring system to ingest data from IoT devices and transformed into an insightful dashboard. Prototyped with Ultra-Wideband upcoming technology to localize coordinates.",
             points: [
-                "Designed and built backend architecture single-handedly with MS Azure IoTEdge and Functions to handle high volume data processing and scalability for IoT monitoring.",
-                "Developed a full-stack web application for an MNC to monitor and analyse IoT sensors using React, Flask and PostgreSQL with analytical tools.",
-                "Prototyped a coordinate tracker from scratch using Ultra-Wideband technology and ESP32 for high precision location calculations with a Pygame GUI"
+                "Designed and built backend architecture single-handedly with MS Azure IoTEdge and Functions to handle high volume data processing and scalability for an IoT monitoring system.",
+                "Developed a full-stack web application to visualize IoT data using React, Flask and PostgreSQL in a Test-Driven Development environment and adopting a Factory Method design pattern.",
+                "Prototyped a coordinate system from scratch using Ultra-Wideband technology and ESP32 for high precision location calculations with a Pygame GUI"
             ],
 
         }
