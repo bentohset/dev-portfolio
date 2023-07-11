@@ -40,32 +40,67 @@ const userData = {
             title: 'trippin',
             desc: 'A collaborative trip planner web app designed to help users plan location-based itineraries',
             image: '/trippin.jpg',
-            url: 'https://trippin-web.vercel.app/'
+            url: 'https://trippin-web.vercel.app/',
+            github: 'https://github.com/bentohset/trippin',
+            summary: `A self-initiated project which came about the problem of planning a trip to Malaysia with my friends. \
+                We wanted to plan our itinerary based on points of interest and found it troublesome to constantly switch between google maps and google sheets.\
+                <br/>
+                Trippin is a trip planner that solves the problem. It comes with real-time collaboration, autocomplete and suggestive locations.\
+                Users can plan their itinerary side by side with a map for point-of-interest based planning.\
+                <br/><br/>
+                It follows modern conventions of JWT authentication and MVC pattern`,
+            stack: ['Next.js', 'Express', 'Node.js', 'MongoDB', 'Google Maps API'],
+
         },
         {
             title: 'officequest',
-            sub: 'DSTA Code_EXP 2023',
+            sub: 'DSTA Code_EXP 2023 Finalist',
             desc: `A mobile app which gamifies the office worker experience with a gacha and reward tier system`,
             image: '/officeq.png',
-            url: 'https://github.com/bentohset/dsta-officequest'
+            url: '',
+            github: 'https://github.com/bentohset/dsta-officequest',
+            summary: `In a small team of 5, my team developed a mobile app to solve the problem of a desk-bound office worker.\
+                Taking inspiration from the popular Google Huat Pals and Battlepass system in common games, this app encourages social interaction amongst employees and transforms boring tasks into exciting quest.\
+                Users can embark on customized quests to work towards an Pantry Pal ticket.\
+                Once all pals are collected, users can redeem attractive prizes.\
+                <br/><br/>
+                RESTful API was implemented with a microservices and facade pattern. Features include JWT authentication and a unique OTP generation gimmick for quests. `,
+            stack: ['React Native', 'Express', 'Node.js', 'MongoDB'],
         },
         {
             title: 'mykampung',
             sub: 'SUTD What the Hack 2022 Winner',
             desc: 'A mobile app designed to help residents within HDBs to connect with their neighbours',
             image: '/myKampungApp.png',
-            url: 'https://github.com/bentohset/sutdwth-mykampung'
+            url: '',
+            github: 'https://github.com/bentohset/sutdwth-mykampung',
+            summary: `With the advancement of technology, people are becoming increasinly isolated and stuck in their own world of devices. \
+                Using this app, we can bring back the "kampung" spirit of togetherness as some things are done best with the people around you.\
+                In a small team of 4 with a limited time constraint of 48hrs, my team worked hard to finish this hack to fruition and eventually won first place.\
+                <br/><br/>
+                This app is aimed towards residents of the same HDB block. It has features of an announcement board and, chat groups for carpooling and food sharing.\
+                Firebase is integrated within the app and serves as our backend as a one-fits-all solution in this limited time constraint.
+                `,
+            stack: ['React Native', 'Google Cloud Platform'],
         },
         {
             title: 'developer portfolio',
-            desc: 'My personal portfolio site to learn threeJS',
+            desc: 'My personal portfolio site',
             image: '/devportfolio.jpg',
-            url: 'https://github.com/bentohset/dev-portfolio'
+            url: '',
+            github:  'https://github.com/bentohset/dev-portfolio',
+            summary: `A personal portfolio website to showcase my technical skills, projects and experiences.\
+                It also serves as my stint to learn ThreeJS, blender and 3d modelling to explore new technologies.`,
+            stack: ['Next.js', 'ThreeJS', 'Blender', 'MagicaVoxel'],
         },
         {
             title: 'food recommender',
             desc: 'Work in progress!',
-            image: ''
+            image: '',
+            url: '',
+            github: '',
+            summary: `work in progress!`,
+            stack: [],
         },
     ]
 
