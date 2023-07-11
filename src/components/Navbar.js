@@ -122,12 +122,12 @@ function Navbar() {
         
 
         
-        <div className="space-x-6 flex flex-row items-center">
+        <div className="md:space-x-6 space-x-4 flex flex-row items-center">
           <a href={userData.contacts.github} target='__blank'>
-            <FaGithub className='dark:text-[#c6cdd5] text-[#89929b] hover:text-[#21262d] dark:hover:text-[#ecf2f8] text-2xl'/>
+            <FaGithub className='dark:text-[#c6cdd5] text-[#89929b] hover:text-[#21262d] dark:hover:text-[#ecf2f8] md:text-2xl text-xl'/>
           </a>
           <a href={userData.contacts.linkedin} target='__blank'>
-            <FaLinkedin className='dark:text-[#c6cdd5] text-[#89929b] hover:text-[#21262d] dark:hover:text-[#ecf2f8] text-2xl'/>
+            <FaLinkedin className='dark:text-[#c6cdd5] text-[#89929b] hover:text-[#21262d] dark:hover:text-[#ecf2f8] md:text-2xl text-xl'/>
           </a>
           <button
             aria-label="Toggle Dark Mode"
