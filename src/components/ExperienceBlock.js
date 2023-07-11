@@ -2,9 +2,9 @@ import React from 'react'
 
 function ExperienceBlock({ exp, isConcise }) {
   return (
-    <div className='flex sm:flex-col md:flex-col lg:flex-row flex-col'>
-        <div className='flex md:w-full sm:w-full lg:w-1/6 w-full'>
-            <p className=''>{exp.period}</p>
+    <div className='flex sm:flex-col md:flex-col lg:flex-row flex-col items-start'>
+        <div className='flex md:w-full sm:w-full lg:w-1/6 w-full '>
+            <p className='pt-0.5'>{exp.period}</p>
         </div>
         <div className='flex flex-col sm:w-full md:w-full lg:w-5/6 w-full justify-start'>
             <p className='dark:text-[#a2d2fb] font-bold text-lg mb-2'>{exp.role} at {exp.company}</p>
