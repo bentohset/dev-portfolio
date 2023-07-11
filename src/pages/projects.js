@@ -31,8 +31,8 @@ function projects() {
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-4 '>
             {userData.projects.map(obj => (
-              <div className='overflow-hidden dark:hover:bg-gray-800 hover:bg-gray-200 rounded-md p-4 group w-94 cursor-pointer' onClick={()=>{openModal(obj)}}>
-                <ProjectCard project={obj} key={obj.title}/>
+              <div key={obj.title} className='overflow-hidden dark:hover:bg-gray-800 hover:bg-gray-200 rounded-md p-4 group w-94 cursor-pointer' onClick={()=>{openModal(obj)}}>
+                <ProjectCard project={obj} />
               </div>
             ))}
             
