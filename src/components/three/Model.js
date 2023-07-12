@@ -27,7 +27,7 @@ function Model({textInput}) {
 
 
   return (
-    <div className="flex md:items-center align-center justify-center md:h-full h-5/6 w-full cursor-grab focus:cursor-grabbing pt-10">
+    <div className="flex md:items-center align-center justify-center md:h-full h-4/6 w-full cursor-grab focus:cursor-grabbing xl:pt-0 lg:pt-20 md:pt-24 pt-12">
       <Canvas shadows dpr={[1, 2]} camera={{ position: [1, 2, 5], far: 50, fov:10,  zoom: 0.5 }} >
           <Suspense fallback={null}>
             <ambientLight intensity={1}/>
