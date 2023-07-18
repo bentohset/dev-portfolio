@@ -6,7 +6,7 @@ const userData = {
         email: "mailto:toh.benjamin@u.nus.edu",
     },
     skills: {
-        languages: ['C/C++', 'Python', 'Javascript', 'Java', 'HTML', 'CSS', 'Swift'],
+        languages: ['C/C++', 'Python', 'Javascript', 'Java', 'HTML', 'CSS', 'Swift', 'Golang'],
         frameworks: ['React', 'React Native', 'Next.js', 'Flask', 'TailwindCSS', 'Nodejs', 'Express', 'SwiftUI', 'ThreeJS'],
         tools: ['Git/Github', 'Docker', 'Figma', 'Kubernetes'],
         database:['MongoDB', 'PostgreSQL', 'Google Cloud', 'MS Azure'],
