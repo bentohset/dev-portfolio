@@ -1,7 +1,7 @@
 import React, { Suspense }  from 'react'
 import Head from 'next/head'
 import { Canvas, useLoader } from "@react-three/fiber"
-import { Environment, OrbitControls, CameraControls, Html, Text } from "@react-three/drei"
+import { Environment, OrbitControls, CameraControls, Html, Text, useProgress } from "@react-three/drei"
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
 import * as THREE from 'three'
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
@@ -25,11 +25,16 @@ function Model({textInput}) {
     );
   };
 
+  const Loader = () => {
+    const { progress } = useProgress()
+    return <Html center ><p className='text-center text-xl'>{progress} % loaded</p></Html>
+  }
+
 
   return (
     <div className="flex md:items-center align-center justify-center md:h-full h-4/6 w-full cursor-grab focus:cursor-grabbing xl:pt-0 lg:pt-20 md:pt-24 pt-12">
       <Canvas shadows dpr={[1, 2]} camera={{ position: [1, 2, 5], far: 50, fov:10,  zoom: 0.5 }} >
-          <Suspense fallback={null}>
+          <Suspense fallback={<Loader/>}>
             <ambientLight intensity={1}/>
             <Text
               fontSize={0.025}
