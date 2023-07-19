@@ -12,6 +12,7 @@
     "@headlessui/react": "^1.7.15",
     "@react-three/drei": "^9.78.1",
     "@react-three/fiber": "^8.13.4",
+    "@vercel/analytics": "^1.0.1",
     "autoprefixer": "10.4.14",
     "next": "13.4.7",
     "next-themes": "^0.2.1",

@@ -1,4 +1,3 @@
-import ContainerBlock from '@/components/ContainerBlock'
 import Typewriter from '@/components/Typewriter';
 import Model from '@/components/three/Model'
 import { useEffect, useState, useRef } from 'react'
