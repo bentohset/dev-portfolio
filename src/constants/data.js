@@ -21,11 +21,11 @@ const userData = {
                 Backend: ["MS Azure", "Flask", "PostgreSQL", "Docker", "C/C++"],
 
             },
-            concise: "Built monitoring system to ingest data from IoT devices and transformed into an insightful dashboard. Prototyped with Ultra-Wideband upcoming technology to localize coordinates.",
+            concise: "Built monitoring system to ingest data from 1K+ IoT devices and transformed into an insightful dashboard. Prototyped with Ultra-Wideband upcoming technology to localize high precision coordinates.",
             points: [
-                "Designed and built backend architecture single-handedly with MS Azure IoTEdge and Functions to handle high volume data processing and scalability for an IoT monitoring system.",
-                "Developed a full-stack web application to visualize IoT data using React, Flask and PostgreSQL in a Test-Driven Development environment and adopting a Factory Method design pattern.",
-                "Prototyped a coordinate system from scratch using Ultra-Wideband technology and ESP32 for high precision location calculations with a Pygame GUI"
+                "Designed and built backend architecture single-handedly with MQTT, Microsoft Azure IoTEdge and Functions to handle high volume data processing and scalability for an IoT monitoring system with 1K+ sensors.",
+                "Developed a full-stack web application to visualise and analyse IoT data using React, Flask and PostgreSQL and adopted a Factory Method design pattern while achieving >95% unit test coverage.",
+                "Prototyped a high precision indoor location coordinate system from scratch with Ultra-Wideband technology, ESP32 microcontrollers and a Python GUI."
             ],
 
         }
