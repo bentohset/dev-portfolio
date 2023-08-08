@@ -95,12 +95,17 @@ const userData = {
         },
         {
             title: 'food recommender',
-            desc: 'Work in progress!',
+            desc: 'A recommendation system which utilizes machine learning to generate restaurants based on user preferences',
             image: '',
             url: '',
             github: '',
-            summary: `work in progress!`,
-            stack: [],
+            summary: `To solve the problem of indecisiveness when choosing a food place. It adopts a Microservice architecture deployed as Kubernetes cluster on Azure with Terraform. \
+                It consists of a telegram bot, a content-based filtering machine learning model evaluated with TF-IDF, a REST API gateway and a frontend portal for user submissions and approvals.\
+                gRPC is used for inter-service communication. \
+                <br/><br/>
+                Users can select preferences of mealtime, budget, mood and cuisine-dont-wants using the telegram bot. It then generates a diverse list of restaurants satisfying the user preferences. \
+                The user can then select specific restaurant for a more personalised recommendation which generates similar resturants based on reviews.`,
+            stack: ['Python', 'Golang', 'gRPC', 'MS Azure', 'Kubernetes', 'Next.js', 'PostgreSQL', 'Selenium', 'Scikit-learn'],
         },
     ]
 
