@@ -61,9 +61,9 @@ function ProjectModal({ isOpen, project, closeModal }) {
                 <div className='flex flex-col gap-y-2'>
                   {project.url && 
                     <p>
-                      <span className='bg-[#faa356] dark:text-[#21262d] text-white px-2 rounded-md mr-2 py-0.5 '>website</span>
+                      <span className='bg-[#faa356] dark:text-[#21262d] text-white px-2 rounded-md mr-2 py-0.5 '>demo</span>
                       <div className='group inline-flex justify-center items-center'>
-                        <a href={project.url} target='__blank' className='group-hover:underline'>Site</a>
+                        <a href={project.url} target='__blank' className='group-hover:underline'>Link</a>
                         <BiLinkExternal className='inline-flex ml-1'/>
                       </div>
                     </p>
