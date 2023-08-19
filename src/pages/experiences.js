@@ -20,7 +20,7 @@ function experiences() {
             {concise ? "Full" : "Concise"}
           </button> */}
         </div>
-        <p className='mt-2'>I'm looking for a job! If you see me as a good fit, check my <a href='/Resume.pdf' target='__blank' className='underline font-bold hover:text-[#7ce38b]'>CV</a> :)</p>
+        <p className='mt-2'>I'm looking for a job! If you see me as a good fit, check my <a href={userData.resumeUrl} target='__blank' className='underline font-bold hover:text-[#7ce38b]'>CV</a> :)</p>
       </div>
 
       <div className='flex flex-row items-center space-x-2'>
