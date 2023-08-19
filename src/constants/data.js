@@ -1,14 +1,14 @@
 const userData = {
-    resumeUrl: "",
+    resumeUrl: "https://drive.google.com/file/d/1FHdhDG5VQEvKlY3sfuHknhDeBM0JL-c9/view?usp=sharing",
     contacts: {
         linkedin: "https://www.linkedin.com/in/benjamin-chr-toh",
         github: "https://github.com/bentohset",
         email: "mailto:toh.benjamin@u.nus.edu",
     },
     skills: {
-        languages: ['C/C++', 'Python', 'Javascript', 'Java', 'HTML', 'CSS', 'Swift', 'Golang'],
-        frameworks: ['React', 'React Native', 'Next.js', 'Flask', 'TailwindCSS', 'Nodejs', 'Express', 'SwiftUI', 'ThreeJS'],
-        tools: ['Git/Github', 'Docker', 'Figma', 'Kubernetes'],
+        languages: ['C/C++', 'Python', 'Javascript', 'Java', 'HTML', 'CSS', 'Go', 'SQL'],
+        frameworks: ['React', 'React Native', 'Next.js', 'Flask', 'TailwindCSS', 'Nodejs', 'Express', 'ThreeJS'],
+        tools: ['Git/Github', 'Docker', 'Figma', 'Kubernetes', 'Terraform'],
         database:['MongoDB', 'PostgreSQL', 'Google Cloud', 'MS Azure'],
     },
     experiences: [
@@ -53,6 +53,20 @@ const userData = {
 
         },
         {
+            title: 'food recommender',
+            desc: 'A recommendation system which utilizes machine learning to generate restaurants based on user preferences',
+            image: '/GoEats.jpg',
+            url: 'https://t.me/goeats_bot',
+            github: 'https://github.com/bentohset/go-eats',
+            summary: `To solve the problem of indecisiveness when choosing a food place. It adopts a Microservice architecture deployed as a Kubernetes cluster on Azure Kubernetes Service with Terraform. \
+                It consists of a telegram bot as a gRPC client, a content-based filtering machine learning model evaluated with TF-IDF as a gRPC server, a REST API web server and a frontend portal for user submissions and approvals.\
+                PostgreSQL hosted on Azure Database is used. \
+                <br/><br/>
+                Users can select preferences of mealtime, budget, mood and cuisine-dont-wants using the telegram bot. It then generates a diverse list of restaurants satisfying the user preferences. \
+                The user can then select specific restaurant for a more personalised recommendation which generates similar resturants based on reviews. Check out the documentation process in my GitHub!`,
+            stack: ['Python', 'Go', 'gRPC', 'MS Azure', 'Kubernetes', , 'Docker', 'Next.js', 'PostgreSQL', 'Selenium', 'Scikit-learn'],
+        },
+        {
             title: 'officequest',
             sub: 'DSTA Code_EXP 2023 Finalist',
             desc: `A mobile app which gamifies the office worker experience with a gacha and reward tier system`,
@@ -93,20 +107,7 @@ const userData = {
                 It also serves as my stint to learn ThreeJS, blender and 3d modelling to explore new technologies.`,
             stack: ['Next.js', 'ThreeJS', 'Blender', 'MagicaVoxel'],
         },
-        {
-            title: 'food recommender',
-            desc: 'A recommendation system which utilizes machine learning to generate restaurants based on user preferences',
-            image: '',
-            url: '',
-            github: '',
-            summary: `To solve the problem of indecisiveness when choosing a food place. It adopts a Microservice architecture deployed as Kubernetes cluster on Azure with Terraform. \
-                It consists of a telegram bot, a content-based filtering machine learning model evaluated with TF-IDF, a REST API gateway and a frontend portal for user submissions and approvals.\
-                gRPC is used for inter-service communication. \
-                <br/><br/>
-                Users can select preferences of mealtime, budget, mood and cuisine-dont-wants using the telegram bot. It then generates a diverse list of restaurants satisfying the user preferences. \
-                The user can then select specific restaurant for a more personalised recommendation which generates similar resturants based on reviews.`,
-            stack: ['Python', 'Golang', 'gRPC', 'MS Azure', 'Kubernetes', 'Next.js', 'PostgreSQL', 'Selenium', 'Scikit-learn'],
-        },
+        
     ]
 
 }
