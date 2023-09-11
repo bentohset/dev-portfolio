@@ -13,14 +13,39 @@ const userData = {
     },
     experiences: [
         {
+            role: "Software Engineer",
+            company: "Google Developer Student Club NUS",
+            period: "Aug 2023 - Present",
+            skills: [
+                "Next.js", "TypeScript", "Node.js", "Express"
+            ],
+            concise: "",
+            points: [
+                "Working in a team of 10 to build a volunteer management system for a Non-Profit Orgnaisation MINDS MYG Singapore catered towards special needs beneficiaries."
+            ],
+
+        },
+        {
+            role: "Undergraduate Teaching Assistant",
+            company: "National University of Singapore",
+            period: "Aug 2023 - Present",
+            skills: [
+                "Java", "OOP"
+            ],
+            concise: "",
+            points: [
+                "AY 2023/2024 Sem 1: CS2113 - Software Engineering and OOP (Java)"
+            ],
+
+        },
+        {
             role: "Software Engineer Intern",
             company: "Trilogy Technologies",
             period: "May 2023 - Aug 2023",
-            skills: {
-                Frontend: ["React", "Pygame"],
-                Backend: ["MS Azure", "Flask", "PostgreSQL", "Docker", "C/C++"],
-
-            },
+            skills: [
+                "React", "Python",
+                "MS Azure", "Flask", "PostgreSQL", "Docker", "C/C++",
+            ],
             concise: "Built monitoring system to ingest data from 1K+ IoT devices and transformed into an insightful dashboard. Prototyped with Ultra-Wideband upcoming technology to localize high precision coordinates.",
             points: [
                 "Designed and built backend architecture single-handedly with MQTT, Microsoft Azure IoTEdge and Functions to handle high volume data processing and scalability for an IoT monitoring system with 1K+ sensors.",

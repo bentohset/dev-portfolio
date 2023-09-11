@@ -3,7 +3,13 @@ import { useRouter } from 'next/router'
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import userData from '@/constants/data';
-import { FaEnvelope, FaGithub, FaLink, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import {
+  Container,
+  Heading,
+  useColorModeValue,
+  useMediaQuery,
+} from '@chakra-ui/react';
 
 function Navbar() {
     const router = useRouter()
@@ -16,7 +22,11 @@ function Navbar() {
     }, []);
 
   return (
-    <nav className="mx-auto px-10 py-6 md:py-6 fixed top-0 z-50 w-full dark:bg-gray-800 bg-white">
+    <Container
+      as='header'
+      maxW='3xl' 
+      className="px-10 md:py-6 py-10 z-50 w-full bg-[#dfdfdf] dark:bg-gray-900"
+    >
     <div className="flex md:flex-row justify-between items-center">
         <div className="flex flex-row">
             <Link
@@ -28,6 +38,35 @@ function Navbar() {
             </Link>
 
             <div className="ml-10 space-x-8 hidden md:flex justify-center items-center">
+            <Link
+                href="/"
+                className={`text-base  ${
+                router.asPath === "/"
+                    ? "text-gray-800 font-bold dark:text-gray-400"
+                    : "text-gray-600 dark:text-gray-300 font-normal "
+                }`}
+            >
+                {router.asPath == '/' && (
+                    `//`
+                )}
+                home{" "}
+                {/* {router.asPath === "/about" && (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    className="bi bi-arrow-down inline-block h-3 w-3"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                    fillRule="evenodd"
+                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+                    />
+                </svg>
+                )} */}
+
+            </Link>
             <Link
                 href="/about"
                 className={`text-base  ${
@@ -163,7 +202,16 @@ function Navbar() {
           </button>
         </div>
       </div>
-      <div className="space-x-8 block md:hidden mt-4">
+      <div className="space-x-6 block md:hidden mt-4">
+        <Link
+          href="/"
+          className="text-base font-normal text-gray-600 dark:text-gray-300"
+        >
+          {router.asPath == '/' && (
+            `//`
+          )}
+          home
+        </Link>
         <Link
           href="/about"
           className="text-base font-normal text-gray-600 dark:text-gray-300"
@@ -192,7 +240,7 @@ function Navbar() {
           experiences
         </Link>
       </div>
-    </nav>
+    </Container>
   )
 }
 

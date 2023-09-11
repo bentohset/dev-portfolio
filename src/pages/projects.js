@@ -1,6 +1,8 @@
 import ContainerBlock from '@/components/ContainerBlock'
-import ProjectCard from '@/components/ProjectCard'
+
 import ProjectModal from '@/components/ProjectModal'
+import ProjectSection from '@/components/ProjectSection'
+import Section from '@/components/Section'
 import userData from '@/constants/data'
 import React, { useState } from 'react'
 
@@ -25,18 +27,14 @@ function projects() {
 
   return (
 
-    <section className='md:pt-32 pt-40 gap-y-8 flex flex-col h-full pb-24'>
-        <div className="">
+    <section className='gap-y-8 flex flex-col h-full pb-24'>
+        <Section delay={0.1}>
             <h1 className='text-4xl text-[#89929b]'>self.<span className='text-[#faa356]'>projects</span></h1>
-        </div>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-4 '>
-            {userData.projects.map(obj => (
-              <div key={obj.title} className='overflow-hidden dark:hover:bg-gray-800 hover:bg-gray-200 rounded-md p-4 group w-94 cursor-pointer' onClick={()=>{openModal(obj)}}>
-                <ProjectCard project={obj} />
-              </div>
-            ))}
-            
-        </div>
+        </Section>
+        {userData.projects.map((obj, i) => (
+          <ProjectSection delay={0.3 + 0.1 * i} info={obj} key={i} openModal={openModal}/>
+        ))}
+        
         <ProjectModal isOpen={isOpen} project={project} closeModal={closeModal}/>
     </section>    
   )

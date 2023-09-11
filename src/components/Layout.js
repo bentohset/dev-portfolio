@@ -1,14 +1,15 @@
 import React from 'react'
 import Navbar from './Navbar'
+import { Container } from '@chakra-ui/react';
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <main className='flex flex-col bg-[#dfdfdf] dark:bg-gray-900 dark:text-[#ecf2f8] text-[#21262d]'>
         <Navbar/>
-        <div className='bg-[#dfdfdf] dark:bg-gray-900 h-full z-10 px-10 dark:text-[#ecf2f8] text-[#21262d]'>
-            {children}
-        </div>
-    </>
+        <Container maxW='3xl' flex={1} minHeight='calc(100vh - 133px)' className='pt-0 md:pt-0'>
+          {children}
+        </Container>
+    </main>
   )
 }
 

@@ -63,8 +63,8 @@ function ProjectModal({ isOpen, project, closeModal }) {
                     <p>
                       <span className='bg-[#faa356] dark:text-[#21262d] text-white px-2 rounded-md mr-2 py-0.5 '>demo</span>
                       <div className='group inline-flex justify-center items-center'>
-                        <a href={project.url} target='__blank' className='group-hover:underline'>Link</a>
-                        <BiLinkExternal className='inline-flex ml-1'/>
+                        <a href={project.url} target='__blank' className='group-hover:underline text-[#21262d] dark:text-white '>Link</a>
+                        <BiLinkExternal className='inline-flex ml-1 text-[#21262d] dark:text-white '/>
                       </div>
                     </p>
                   }
@@ -73,14 +73,14 @@ function ProjectModal({ isOpen, project, closeModal }) {
                     <p>
                       <span className='bg-[#faa356] dark:text-[#21262d] text-white px-2 rounded-md mr-2 py-0.5'>github</span>
                       <div className='group inline-flex justify-center items-center'>
-                        <a href={project.github} target='__blank' className='group-hover:underline'>Github Link</a>
-                        <BiLinkExternal className='inline-flex ml-1'/>
+                        <a href={project.github} target='__blank' className='group-hover:underline text-[#21262d] dark:text-white '>Github Link</a>
+                        <BiLinkExternal className='inline-flex ml-1 text-[#21262d] dark:text-white '/>
                       </div>
                       
                     </p>
                   }
 
-                  {project.stack && project.stack.length > 0 && <p>
+                  {project.stack && project.stack.length > 0 && <p className='text-[#21262d] dark:text-white '>
                     <span className='bg-[#faa356] dark:text-[#21262d] text-white px-2 rounded-md mr-2 py-0.5'>stack</span>
                     {project.stack && project.stack.length > 0 && insertComma(project.stack)}
                   </p>}

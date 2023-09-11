@@ -32,7 +32,7 @@ function Model({textInput}) {
 
 
   return (
-    <div className="flex md:items-center align-center justify-center md:h-full h-4/6 w-full cursor-grab focus:cursor-grabbing xl:pt-0 lg:pt-20 md:pt-24 pt-12">
+    <div className="flex align-center justify-center h-full w-full cursor-grab focus:cursor-grabbing">
       <Canvas shadows dpr={[1, 2]} camera={{ position: [1, 2, 5], far: 50, fov:10,  zoom: 0.5 }} >
           <Suspense fallback={<Loader/>}>
             <ambientLight intensity={1}/>
@@ -52,7 +52,7 @@ function Model({textInput}) {
             <Computer />
             <Environment preset="city" />
           </Suspense>
-          <OrbitControls enableRotate={true} enableZoom={false} enablePan={false}/>
+          <OrbitControls enableRotate={true} enableZoom={false} enablePan={false} autoRotate={true}/>
         </Canvas>
     </div>
   )

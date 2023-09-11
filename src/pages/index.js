@@ -1,3 +1,4 @@
+import Section from '@/components/Section';
 import Typewriter from '@/components/Typewriter';
 import Model from '@/components/three/Model'
 import { useEffect, useState, useRef } from 'react'
@@ -18,16 +19,21 @@ export default function Home() {
 
   return (
     <section className='h-screen'>
-      <div className="flex md:flex-row flex-col justify-center items-center h-full md:relative w-full pb-14">
-        <div className="md:absolute md:right-20 md:w-2/3 lg:w-1/2 w-full h-full md:py-4 justify-center flex ">
+      <div className="flex flex-col items-center h-4/6 w-full relative -mt-20">
+        
+        <div className="w-full h-full justify-center flex ">
           <Model textInput={text}/>
         </div>
-        <div className="absolute w-fit md:ml-6 flex flex-col justify-center items-start md:text-3xl xl:text-4xl z-50 md:left-0 lg:left-16 text-2xl bottom-72 md:bottom-96 left-10">
+
+        <Section delay={0.1} className='w-full'>
+        <div className="w-full h-fit absolute md:inset-x-1/4 inset-x-0 flex flex-col justify-center items-start z-50 text-2xl">
           <h1 className='text-left'>Hello world. </h1>
           <p className='text-left'>I am <span className='text-[#fa7970]'>Benjamin Toh.</span></p>
           <p className='text-left'>I love <Typewriter/></p>
           <input className='hidden' ref={inputElement} value={text} onChange={(e)=>{setText(e.target.value)}} onBlur={handleInputBlur}/>
         </div>
+        </Section>
+        
         
       </div>
     </section>
