@@ -2,6 +2,7 @@ import ContainerBlock from '@/components/ContainerBlock'
 
 import ProjectModal from '@/components/ProjectModal'
 import ProjectSection from '@/components/ProjectSection'
+import ScrollToTopButton from '@/components/ScrollToTopButton'
 import Section from '@/components/Section'
 import userData from '@/constants/data'
 import React, { useState } from 'react'
@@ -27,7 +28,7 @@ function projects() {
 
   return (
 
-    <section className='gap-y-8 flex flex-col h-full pb-24'>
+    <section className='gap-y-8 flex flex-col h-full'>
         <Section delay={0.1}>
             <h1 className='text-4xl text-[#89929b]'>self.<span className='text-[#faa356]'>projects</span></h1>
         </Section>
@@ -36,6 +37,7 @@ function projects() {
         ))}
         
         <ProjectModal isOpen={isOpen} project={project} closeModal={closeModal}/>
+        
     </section>    
   )
 }

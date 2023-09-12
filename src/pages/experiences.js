@@ -13,7 +13,7 @@ function experiences() {
   }
 
   return (
-    <section className='gap-y-4 flex flex-col h-screen'>
+    <section className='gap-y-4 flex flex-col h-full'>
       <Section delay={0.1}>
         <div className='flex md:flex-row flex-col gap-x-8 md:items-center items-start gap-y-2 md:gap-y-0'>
           <h1 className='text-4xl text-[#89929b]'>self.<span className='text-[#77bdfb]'>experiences</span></h1>

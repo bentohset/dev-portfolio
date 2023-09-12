@@ -18,22 +18,20 @@ export default function Home() {
   };
 
   return (
-    <section className='h-screen'>
+    <section className='h-screen w-auto '>
       <div className="flex flex-col items-center h-4/6 w-full relative -mt-20">
         
         <div className="w-full h-full justify-center flex ">
           <Model textInput={text}/>
         </div>
-
-        <Section delay={0.1} className='w-full'>
-        <div className="w-full h-fit absolute md:inset-x-1/4 inset-x-0 flex flex-col justify-center items-start z-50 text-2xl">
-          <h1 className='text-left'>Hello world. </h1>
-          <p className='text-left'>I am <span className='text-[#fa7970]'>Benjamin Toh.</span></p>
-          <p className='text-left'>I love <Typewriter/></p>
-          <input className='hidden' ref={inputElement} value={text} onChange={(e)=>{setText(e.target.value)}} onBlur={handleInputBlur}/>
+        <div className='sm:-mt-4 -mt-20 flex flex-col w-full'>
+          <div className="h-fit flex flex-col justify-center items-start text-2xl self-center relative sm:w-3/6 md:4/6 w-full">
+            <h1 className='text-left'>Hello world. </h1>
+            <p className='text-left'>I am <span className='text-[#fa7970]'>Benjamin Toh.</span></p>
+            <p className='text-left'>I love <Typewriter/></p>
+          </div>
+          
         </div>
-        </Section>
-        
         
       </div>
     </section>

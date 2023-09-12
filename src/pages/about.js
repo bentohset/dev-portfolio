@@ -26,7 +26,7 @@ function about() {
         },
     ]
   return (
-    <section className='gap-y-4 flex flex-col h-screen'>
+    <section className='gap-y-4 flex flex-col h-full'>
         <Section delay={0.1} margin={0}>
             <h1 className='text-4xl text-[#89929b]'>self.<span className='text-[#cea5fb]'>about</span></h1>
         </Section>

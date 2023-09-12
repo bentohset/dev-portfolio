@@ -17,11 +17,11 @@ function ExperienceBlock({ exp, isConcise, delay }) {
 
         <div className='flex flex-col w-full justify-start'>
           <div className='flex md:flex-row w-full flex-col justify-between md:items-center items-start'>
-            <p className='font-bold text-xl'>{exp.role}</p>
-            <p className='font-bold text-xl'>{exp.period}</p>
+            <p className='font-bold sm:text-xl text-lg'>{exp.role}</p>
+            <p className='font-bold sm:text-xl text-lg'>{exp.period}</p>
           </div>
           
-          <p className='dark:text-[#a2d2fb] font-bold text-xl mb-2'>{exp.company}</p>
+          <p className='dark:text-[#a2d2fb] font-bold sm:text-xl text-lg mb-2'>{exp.company}</p>
           <ul className='space-y-2'>
             {isConcise ? (
               <p>{exp.concise}</p>
