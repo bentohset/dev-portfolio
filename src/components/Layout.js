@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   return (
     <main className='flex flex-col bg-[#dfdfdf] dark:bg-gray-900 dark:text-[#ecf2f8] text-[#21262d]'>
         <Navbar/>
-        <Container maxW='3xl' flex={1} minHeight='calc(100vh - 200px)' className=''>
+        <Container maxW='3xl' flex={1} minHeight='calc(100vh - 140px)' className=''>
           {children}
           
         </Container>
