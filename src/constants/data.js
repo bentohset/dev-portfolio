@@ -48,7 +48,7 @@ const userData = {
             ],
             concise: "Built monitoring system to ingest data from 1K+ IoT devices and transformed into an insightful dashboard. Prototyped with Ultra-Wideband upcoming technology to localize high precision coordinates.",
             points: [
-                "Designed and built backend architecture single-handedly with MQTT, Microsoft Azure IoTEdge and Functions to handle high volume data processing and scalability for an IoT monitoring system with 1K+ sensors.",
+            "Designed and built backend architecture with data piplines single-handedly with MQTT, Edge Gateway and Azure Functions to handle high volume data processing and scalability for an IoT monitoring system with 1K+ sensors.",
                 "Developed a full-stack web application to visualise and analyse IoT data using React, Flask and PostgreSQL and adopted a Factory Method design pattern while achieving >95% unit test coverage.",
                 "Prototyped a high precision indoor location coordinate system from scratch with Ultra-Wideband technology, ESP32 microcontrollers and a Python GUI."
             ],
@@ -57,7 +57,7 @@ const userData = {
     ],
     about: {
         title: 'Aspiring Software Engineer',
-        bio: "I am a penultimate year <span style='color: #fa7970;'}>Computer Engineering</span> student at the National University of Singapore (NUS) with a minor in <span style='color: #fa7970;'}>Data Engineering</span>. I have a keen interest in fullstack development, machine learning, databases and everything in between!",
+        bio: "I am a penultimate year <span style='color: #fa7970;'}>Computer Engineering</span> student at the National University of Singapore (NUS) with a minor in <span style='color: #fa7970;'}>Data Engineering</span>. I have a keen interest in software engineering, data pipelines, machine learning, databases and everything in between!",
         iLove: ["building things", "simplicity", "efficiency", "tech for good", "exploring new tech", "creating problems", "solving problems", "new experiences", "discussing tech"]
     },
     projects: [
