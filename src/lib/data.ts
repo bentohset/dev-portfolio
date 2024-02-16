@@ -4,6 +4,7 @@ export const experiencesData = [
     {
         role: "Software Engineer",
         company: "Google Developer Student Club NUS",
+        logo: "/icons/exp/govtech.png",
         period: "Aug 2023 - Present",
         skills: [
             "Next.js", "TypeScript", "Node.js", "Express"
@@ -17,6 +18,7 @@ export const experiencesData = [
     {
         role: "Undergraduate Teaching Assistant",
         company: "National University of Singapore",
+        logo: "/icons/exp/nus.png",
         period: "Aug 2023 - Present",
         skills: [
             "Java", "OOP"
@@ -30,6 +32,7 @@ export const experiencesData = [
     {
         role: "Software Engineer Intern",
         company: "Trilogy Technologies",
+        logo: "/icons/exp/govtech.png",
         period: "May 2023 - Aug 2023",
         skills: [
             "React", "Python",

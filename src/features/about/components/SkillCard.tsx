@@ -17,7 +17,7 @@ type Props = {
 export const SkillCard = (props: Props) => {
   const iconSVG = iconMap[props.skill] ?? "";
   return (
-    <TooltipProvider>
+    <TooltipProvider delayDuration={200}>
       <Tooltip>
         <TooltipTrigger>
           <button className='h-24 w-24 rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 dark:bg-zinc-800'>
