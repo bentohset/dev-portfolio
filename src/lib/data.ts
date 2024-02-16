@@ -76,7 +76,7 @@ export const projectsData: ProjectType[] = [
             <br/><br/>
             Users can select preferences of mealtime, budget, mood and cuisine-dont-wants using the telegram bot. It then generates a diverse list of restaurants satisfying the user preferences. \
             The user can then select specific restaurant for a more personalised recommendation which generates similar resturants based on reviews. Check out the documentation process in my GitHub!`,
-        stack: ['Python', 'Go', 'gRPC', 'MS Azure', 'Kubernetes', , 'Docker', 'Next.js', 'PostgreSQL', 'Selenium', 'Scikit-learn'],
+        stack: ['Python', 'Go', 'gRPC', 'MS Azure', 'Kubernetes', 'Docker', 'Next.js', 'PostgreSQL', 'Selenium', 'Scikit-learn'],
     },
     {
         title: 'officequest',
@@ -132,10 +132,10 @@ export const userData = {
         email: "mailto:toh.benjamin@u.nus.edu",
     },
     skills: {
-        languages: ['C/C++', 'Python', 'Javascript', 'Java', 'HTML', 'CSS', 'Go', 'SQL'],
-        frameworks: ['React', 'React Native', 'Next.js', 'Flask', 'TailwindCSS', 'Nodejs', 'Express', 'ThreeJS'],
-        tools: ['Git/Github', 'Docker', 'Figma', 'Kubernetes', 'Terraform'],
-        database:['MongoDB', 'PostgreSQL', 'Google Cloud', 'MS Azure'],
+        languages: ['C', 'C++', 'Python', 'Javascript', 'Typescript', 'Java', 'HTML', 'CSS', 'Go', 'SQL'],
+        frameworks: ['React', 'Next.js', 'Flask', 'FastAPI', 'TailwindCSS', 'Nodejs', 'Express', 'ThreeJS'],
+        tools: ['Git/Github', 'GitLab', 'Docker', 'Figma', 'Kubernetes', 'Terraform', 'Hadoop'],
+        database:['MongoDB', 'PostgreSQL', 'Redis', 'Google Cloud', 'Microsoft Azure'],
     },
     about: {
         title: 'Aspiring Software Engineer',
@@ -143,3 +143,5 @@ export const userData = {
         iLove: ["building things", "simplicity", "efficiency", "tech for good", "exploring new tech", "creating problems", "solving problems", "new experiences", "discussing tech"]
     },
 };
+
+
