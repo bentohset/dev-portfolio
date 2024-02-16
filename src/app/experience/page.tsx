@@ -4,7 +4,7 @@ type Props = {}
 
 const page = async (props: Props) => {
   return (
-    <div>About</div>
+    <div>Experiences</div>
   )
 }
 

@@ -1,3 +1,5 @@
+import { ProjectType } from "@/features/projects";
+
 export const experiencesData = [
     {
         role: "Software Engineer",
@@ -43,9 +45,10 @@ export const experiencesData = [
     }
 ]
 
-export const projectsData = [
+export const projectsData: ProjectType[] = [
     {
         title: 'trippin',
+        type: "self",
         desc: 'A collaborative trip planner web app designed to help users plan location-based itineraries',
         image: '/trippin.jpg',
         url: 'https://trippin-web.vercel.app/',
@@ -62,6 +65,7 @@ export const projectsData = [
     },
     {
         title: 'food recommender',
+        type: "self",
         desc: 'A recommendation system which utilizes machine learning to generate restaurants based on user preferences',
         image: '/GoEats.jpg',
         url: 'https://t.me/goeats_bot',
@@ -76,6 +80,7 @@ export const projectsData = [
     },
     {
         title: 'officequest',
+        type: "hack",
         sub: 'DSTA Code_EXP 2023 Finalist',
         desc: `A mobile app which gamifies the office worker experience with a gacha and reward tier system`,
         image: '/officeq.png',
@@ -91,6 +96,7 @@ export const projectsData = [
     },
     {
         title: 'mykampung',
+        type: "hack",
         sub: 'SUTD What the Hack 2022 Winner',
         desc: 'A mobile app designed to help residents within HDBs to connect with their neighbours',
         image: '/myKampungApp.png',
@@ -107,6 +113,7 @@ export const projectsData = [
     },
     {
         title: 'developer portfolio',
+        type: "self",
         desc: 'My personal portfolio site',
         image: '/devportfolio.jpg',
         url: '',
