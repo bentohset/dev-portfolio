@@ -1,10 +1,26 @@
+import { AchievementType } from "@/features/experience";
 import { ProjectType } from "@/features/projects";
+import { BrainCog, Cat, Cloud, TerminalSquare } from "lucide-react";
 
 export const experiencesData = [
     {
+        role: "Software Engineer Intern",
+        company: "GovTech Singapore",
+        logo: "/icons/exp/govtech.png",
+        period: "Aug 2023 - Present",
+        skills: [
+            "Next.js", "TypeScript", "Node.js", "Express"
+        ],
+        concise: "",
+        points: [
+            "Working in a team of 10 to build a volunteer management system for a Non-Profit Orgnaisation MINDS MYG Singapore catered towards special needs beneficiaries."
+        ],
+
+    },
+    {
         role: "Software Engineer",
         company: "Google Developer Student Club NUS",
-        logo: "/icons/exp/govtech.png",
+        logo: "/icons/exp/gdsc.png",
         period: "Aug 2023 - Present",
         skills: [
             "Next.js", "TypeScript", "Node.js", "Express"
@@ -32,7 +48,7 @@ export const experiencesData = [
     {
         role: "Software Engineer Intern",
         company: "Trilogy Technologies",
-        logo: "/icons/exp/govtech.png",
+        logo: "/icons/exp/trilogy.png",
         period: "May 2023 - Aug 2023",
         skills: [
             "React", "Python",
@@ -48,11 +64,127 @@ export const experiencesData = [
     }
 ]
 
+export const achievementsData: AchievementType[] = [
+    {
+        title: "NUS Hack and Roll",
+        award: "Winner",
+        period: "Jan 2024",
+        image: "/icons/exp/nus.png",
+        desc: "Won out of 244 projects",
+    },
+    {
+        title: "PSA Code Sprint",
+        award: "Finalist",
+        period: "Jan 2024",
+        image: "/icons/exp/psa.png",
+        desc: "Won out of 244 projects",
+    },
+    {
+        title: "DSTA Code_Exp",
+        award: "Finalist",
+        period: "Jan 2024",
+        image: "/icons/exp/dsta.png",
+        desc: "Won out of 244 projects",
+    },
+    {
+        title: "SUTD What the Hack",
+        award: "Winner",
+        period: "Dec 2022",
+        image: "/icons/exp/sutd-logo.png",
+        desc: "Won out of 244 projects",
+    },
+]
+
 export const projectsData: ProjectType[] = [
     {
-        title: 'trippin',
+        title: 'Luna AI',
+        type: "hack",
+        desc: 'AI Call Agent for Government Services',
+        sub: "NUS Hack & Roll 2024 - Winner",
+        image: '',
+        url: 'https://trippin-web.vercel.app/',
+        github: 'https://github.com/bentohset/trippin',
+        summary: `A self-initiated project which came about the problem of planning a trip to Malaysia with my friends. \
+            We wanted to plan our itinerary based on points of interest and found it troublesome to constantly switch between google maps and google sheets.\
+            <br/>
+            Trippin is a trip planner that solves the problem. It comes with real-time collaboration, autocomplete and suggestive locations.\
+            Users can plan their itinerary side by side with a map for point-of-interest based planning.\
+            <br/><br/>
+            It follows modern conventions of JWT authentication and MVC pattern`,
+        stack: ['Next.js', 'Express', 'Node.js', 'MongoDB', 'Google Maps API'],
+
+    },
+    {
+        title: 'Startr',
         type: "self",
-        desc: 'A collaborative trip planner web app designed to help users plan location-based itineraries',
+        desc: 'Networking Platform',
+        image: '',
+        url: 'https://trippin-web.vercel.app/',
+        github: 'https://github.com/bentohset/trippin',
+        summary: `A self-initiated project which came about the problem of planning a trip to Malaysia with my friends. \
+            We wanted to plan our itinerary based on points of interest and found it troublesome to constantly switch between google maps and google sheets.\
+            <br/>
+            Trippin is a trip planner that solves the problem. It comes with real-time collaboration, autocomplete and suggestive locations.\
+            Users can plan their itinerary side by side with a map for point-of-interest based planning.\
+            <br/><br/>
+            It follows modern conventions of JWT authentication and MVC pattern`,
+        stack: ['Next.js', 'Express', 'Node.js', 'MongoDB', 'Google Maps API'],
+
+    },
+    {
+        title: 'TikiWallet',
+        type: "hack",
+        desc: 'E-wallet with offline capabilities',
+        sub: "TikTok Hackathon 2023 - Participant",
+        image: '',
+        url: 'https://trippin-web.vercel.app/',
+        github: 'https://github.com/bentohset/trippin',
+        summary: `A self-initiated project which came about the problem of planning a trip to Malaysia with my friends. \
+            We wanted to plan our itinerary based on points of interest and found it troublesome to constantly switch between google maps and google sheets.\
+            <br/>
+            Trippin is a trip planner that solves the problem. It comes with real-time collaboration, autocomplete and suggestive locations.\
+            Users can plan their itinerary side by side with a map for point-of-interest based planning.\
+            <br/><br/>
+            It follows modern conventions of JWT authentication and MVC pattern`,
+        stack: ['Next.js', 'Express', 'Node.js', 'MongoDB', 'Google Maps API'],
+    },
+    {
+        title: 'Logiflow',
+        type: "hack",
+        desc: 'Supply Optimization Platform',
+        sub: "PSA Codesprint 2023 - Finalist",
+        image: '',
+        url: 'https://trippin-web.vercel.app/',
+        github: 'https://github.com/bentohset/trippin',
+        summary: `A self-initiated project which came about the problem of planning a trip to Malaysia with my friends. \
+            We wanted to plan our itinerary based on points of interest and found it troublesome to constantly switch between google maps and google sheets.\
+            <br/>
+            Trippin is a trip planner that solves the problem. It comes with real-time collaboration, autocomplete and suggestive locations.\
+            Users can plan their itinerary side by side with a map for point-of-interest based planning.\
+            <br/><br/>
+            It follows modern conventions of JWT authentication and MVC pattern`,
+        stack: ['Next.js', 'Express', 'Node.js', 'MongoDB', 'Google Maps API'],
+
+    },
+    {
+        title: 'Go Eats',
+        type: "self",
+        desc: 'Food Recommendation System',
+        image: '/GoEats.jpg',
+        url: 'https://t.me/goeats_bot',
+        github: 'https://github.com/bentohset/go-eats',
+        summary: `To solve the problem of indecisiveness when choosing a food place. It adopts a Microservice architecture deployed as a Kubernetes cluster on Azure Kubernetes Service with Terraform. \
+            It consists of a telegram bot as a gRPC client, a content-based filtering machine learning model evaluated with TF-IDF as a gRPC server, a REST API web server and a frontend portal for user submissions and approvals.\
+            PostgreSQL hosted on Azure Database is used. \
+            <br/><br/>
+            Users can select preferences of mealtime, budget, mood and cuisine-dont-wants using the telegram bot. It then generates a diverse list of restaurants satisfying the user preferences. \
+            The user can then select specific restaurant for a more personalised recommendation which generates similar resturants based on reviews. Check out the documentation process in my GitHub!`,
+        stack: ['Python', 'Go', 'gRPC', 'MS Azure', 'Kubernetes', 'Docker', 'Next.js', 'PostgreSQL', 'Selenium', 'Scikit-learn'],
+    },
+    {
+        title: 'Trippin',
+        type: "self",
+        desc: 'Collaborative Trip Planner web app for location-based planning',
         image: '/trippin.jpg',
         url: 'https://trippin-web.vercel.app/',
         github: 'https://github.com/bentohset/trippin',
@@ -67,25 +199,10 @@ export const projectsData: ProjectType[] = [
 
     },
     {
-        title: 'food recommender',
-        type: "self",
-        desc: 'A recommendation system which utilizes machine learning to generate restaurants based on user preferences',
-        image: '/GoEats.jpg',
-        url: 'https://t.me/goeats_bot',
-        github: 'https://github.com/bentohset/go-eats',
-        summary: `To solve the problem of indecisiveness when choosing a food place. It adopts a Microservice architecture deployed as a Kubernetes cluster on Azure Kubernetes Service with Terraform. \
-            It consists of a telegram bot as a gRPC client, a content-based filtering machine learning model evaluated with TF-IDF as a gRPC server, a REST API web server and a frontend portal for user submissions and approvals.\
-            PostgreSQL hosted on Azure Database is used. \
-            <br/><br/>
-            Users can select preferences of mealtime, budget, mood and cuisine-dont-wants using the telegram bot. It then generates a diverse list of restaurants satisfying the user preferences. \
-            The user can then select specific restaurant for a more personalised recommendation which generates similar resturants based on reviews. Check out the documentation process in my GitHub!`,
-        stack: ['Python', 'Go', 'gRPC', 'MS Azure', 'Kubernetes', 'Docker', 'Next.js', 'PostgreSQL', 'Selenium', 'Scikit-learn'],
-    },
-    {
-        title: 'officequest',
+        title: 'Officequest',
         type: "hack",
-        sub: 'DSTA Code_EXP 2023 Finalist',
-        desc: `A mobile app which gamifies the office worker experience with a gacha and reward tier system`,
+        sub: 'DSTA Code_EXP 2023 - Finalist',
+        desc: `Office Gamification Mobile App with a gacha and reward tier system`,
         image: '/officeq.png',
         url: '',
         github: 'https://github.com/bentohset/dsta-officequest',
@@ -98,10 +215,10 @@ export const projectsData: ProjectType[] = [
         stack: ['React Native', 'Express', 'Node.js', 'MongoDB'],
     },
     {
-        title: 'mykampung',
+        title: 'myKampung',
         type: "hack",
-        sub: 'SUTD What the Hack 2022 Winner',
-        desc: 'A mobile app designed to help residents within HDBs to connect with their neighbours',
+        sub: 'SUTD What the Hack 2022 - Winner',
+        desc: 'Social Media Mobile App to connect HDB residents',
         image: '/myKampungApp.png',
         url: '',
         github: 'https://github.com/bentohset/sutdwth-mykampung',
@@ -115,9 +232,9 @@ export const projectsData: ProjectType[] = [
         stack: ['React Native', 'Google Cloud Platform'],
     },
     {
-        title: 'developer portfolio',
+        title: 'Developer Portfolio',
         type: "self",
-        desc: 'My personal portfolio site',
+        desc: 'Personal Website',
         image: '/devportfolio.jpg',
         url: '',
         github:  'https://github.com/bentohset/dev-portfolio',
@@ -130,19 +247,41 @@ export const projectsData: ProjectType[] = [
 export const userData = {
     resumeUrl: "https://drive.google.com/file/d/1FHdhDG5VQEvKlY3sfuHknhDeBM0JL-c9/view?usp=sharing",
     contacts: {
-        linkedin: "https://www.linkedin.com/in/benjamin-chr-toh",
+        linkedin: "https://www.linkedin.com/in/ben-toh",
         github: "https://github.com/bentohset",
-        email: "mailto:toh.benjamin@u.nus.edu",
+        email: "mailto:toh.benjamin123@gmail.com",
     },
+    interests: [
+        {
+            title: "Software Engineering",
+            desc: "Me love to build big systems. Me love to code",
+            icon: TerminalSquare,
+        },
+        {
+            title: "Machine/Deep Learning",
+            desc: "Computer brain go brrrr",
+            icon: BrainCog,
+        },
+        {
+            title: "Cloud Computing",
+            desc: "How to deploy a server in 2024: click button",
+            icon: Cloud,
+        },
+        {
+            title: "Cats",
+            desc: "Who doesn't love cats",
+            icon: Cat,
+        }
+    ],
     skills: {
         languages: ['C', 'C++', 'Python', 'Javascript', 'Typescript', 'Java', 'HTML', 'CSS', 'Go', 'SQL'],
         frameworks: ['React', 'Next.js', 'Flask', 'FastAPI', 'TailwindCSS', 'Nodejs', 'Express', 'ThreeJS'],
         tools: ['Git/Github', 'GitLab', 'Docker', 'Figma', 'Kubernetes', 'Terraform', 'Hadoop'],
-        database:['MongoDB', 'PostgreSQL', 'Redis', 'Google Cloud', 'Microsoft Azure'],
+        database:['MongoDB', 'PostgreSQL', 'Redis', 'Google Cloud', 'Microsoft Azure', 'Amazon Web Service'],
     },
     about: {
         title: 'Aspiring Software Engineer',
-        bio: "I am a penultimate year <span style='color: #fa7970;'}>Computer Engineering</span> student at the National University of Singapore (NUS) with a minor in <span style='color: #fa7970;'}>Data Engineering</span>. I have a keen interest in software engineering, data pipelines, machine learning, databases and everything in between!",
+        bio: "I am a penultimate year <span style='color: #CEA5FB;'}>Computer Engineering</span> student at the National University of Singapore (NUS) with a minor in <span style='color: #CEA5FB;'}>Data Engineering</span>. I have a keen interest in software engineering, data pipelines, machine learning, databases and everything in between!",
         iLove: ["building things", "simplicity", "efficiency", "tech for good", "exploring new tech", "creating problems", "solving problems", "new experiences", "discussing tech"]
     },
 };

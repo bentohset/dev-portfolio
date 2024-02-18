@@ -23,9 +23,9 @@ export const TimelineRow = (props: Props) => {
         
         <h2 className='font-medium'>{exp.company}</h2>
         {props.isConcise ? (
-          <p className='text-zinc-600 dark:text-zinc-400'>{exp.concise}</p>
+          <p className='text-zinc-600 dark:text-zinc-400 animate-in slide-in-from-top-4 duration-200 fade-in'>{exp.concise}</p>
         ):(
-          <ul className='list-disc list-inside space-y-2'>
+          <ul className='list-disc list-inside space-y-2 animate-in slide-in-from-top-4 duration-200 fade-in'>
             {exp.points.map((o,i) => (
               <li key={i} className='text-zinc-600 dark:text-zinc-400 leading-5' >{o}</li>
             ))}

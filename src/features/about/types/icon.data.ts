@@ -30,7 +30,7 @@ export const icons = {
   "Hadoop": "hadoop.svg",
   "Google Cloud": "google-cloud.svg",
   "Microsoft Azure": "azure.svg",
-  "AWS": "amazon-web-services.svg",
+  "Amazon Web Service": "amazon-web-services.svg",
   "Arduino": "arduino.svg",
   "Bash": "bash.svg",
   "Prisma ORM": "prisma-orm.svg"

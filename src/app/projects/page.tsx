@@ -23,7 +23,7 @@ const page = async () => {
   const projects: ProjectType[] = projectsData;
   return (
     <div className='flex flex-col items-center justify-center w-full h-full'>
-      <Tabs defaultValue="all" className="text-center space-y-8">
+      <Tabs defaultValue="all" className="text-center space-y-8 animate-in slide-in-from-top-8 fade-in">
         <TabsList>
           {filters.map((o) => (
             <TabsTrigger value={o.value} key={o.label} className='data-[state=active]:text-devPrimary'>{o.label}</TabsTrigger>

@@ -21,11 +21,16 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={cn("bg-zinc-50 dark:bg-black", inter.className)}>
-        <ThemeProvider>
-          <div className=" mx-auto max-w-2xl lg:max-w-6xl px-4 bg-zinc-50 dark:bg-black">
+        <ThemeProvider
+          attribute="class" 
+          defaultTheme='system' 
+          enableSystem 
+          disableTransitionOnChange
+        >
+          <div className=" mx-auto max-w-6xl px-4 bg-zinc-50 dark:bg-black">
             <div className="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20">
               <Navbar/>
-              <div className="flex min-h-screen px-24 pt-8 pb-12">
+              <div className="flex min-h-screen md:px-24 px-8 pt-8 pb-12">
                 {children}
               </div>
               <Footer />

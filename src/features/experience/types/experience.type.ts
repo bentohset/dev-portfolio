@@ -7,3 +7,11 @@ export interface ExperienceType {
   points: string[];
   skills: string[];
 }
+
+export interface AchievementType {
+  title: string;
+  award: string;
+  period: string;
+  image: string;
+  desc: string;
+}

@@ -3,8 +3,9 @@
 import { Button } from '@/components/ui/button'
 import { ArrowDown, Maximize, Minimize } from 'lucide-react'
 import React, { useState } from 'react'
-import { experiencesData } from '@/lib/data';
+import { achievementsData, experiencesData } from '@/lib/data';
 import { ExperienceType, TimelineRow } from '@/features/experience';
+import { AchievementRow } from '@/features/experience/components/AchievementRow';
 
 type Props = {}
 
@@ -34,7 +35,7 @@ const page = (props: Props) => {
             </Button>
           </div>
         </div>
-        <div className='rounded-lg border border-zinc-100 p-6 dark:border-zinc-700/40'>
+        <div className='rounded-lg border border-zinc-100 p-6 dark:border-zinc-700/40 animate-in slide-in-from-top-8 fade-in duration-500'>
           <div className='space-y-8'>
             {experiencesData.map((o,i) => (
               <TimelineRow key={i} experience={o} isConcise={isMinimized} />
@@ -45,10 +46,10 @@ const page = (props: Props) => {
 
       <section className='w-full space-y-4'>
         <h1 className='font-bold text-2xl'>My Achievements</h1>
-        <div className='rounded-lg border border-zinc-100 p-6 dark:border-zinc-700/40'>
+        <div className='rounded-lg border border-zinc-100 p-6 dark:border-zinc-700/40 animate-in slide-in-from-top-8 fade-in duration-500'>
           <div className='space-y-8'>
-            {experiencesData.map((o,i) => (
-              <TimelineRow key={i} experience={o} isConcise={isMinimized} />
+            {achievementsData.map((o,i) => (
+              <AchievementRow key={i} achievement={o} />
             ))}
           </div>
         </div>
