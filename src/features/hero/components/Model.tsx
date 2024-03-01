@@ -18,7 +18,7 @@ export function Model() {
 
   const Loader = () => {
     const { progress } = useProgress()
-    return <Html center ><p className='text-center text-xl'>{progress} % loaded</p></Html>
+    return <Html center ><p className='text-center text-xl font-bold'>{progress}%</p></Html>
   }
 
 

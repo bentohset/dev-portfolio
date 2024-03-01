@@ -75,6 +75,11 @@
   }
   
 }
+
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter';
   background: #fdfdfd;

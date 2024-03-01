@@ -11,7 +11,7 @@ export const ProjectCard = ({ project, openModal } : {
   const imageUrl = project.image ? `/images${project.image}` : "/grey.jpg"
   return (
     <div
-      className='animate-in slide-in-from-top-8 fade-in duration-500 cursor-pointer rounded-xl text-left p-4 relative group hover:bg-zinc-50 hover:dark:bg-zinc-800/50 '
+      className='animate-in slide-in-from-top-8 fade-in duration-500 cursor-pointer rounded-xl text-left p-4 relative group hover:bg-zinc-50 hover:dark:bg-zinc-800 '
       onClick={() => openModal(project)}
     >
       <div className='z-40'>

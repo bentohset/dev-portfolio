@@ -46,7 +46,7 @@ export const SkillCard = (props: Props) => {
     <TooltipProvider delayDuration={200}>
       <Tooltip>
         <TooltipTrigger asChild>
-          <button className='md:h-24 md:w-24 h-16 w-16 rounded-2xl border border-zinc-100 md:p-6 p-2 dark:border-zinc-700/40 dark:bg-zinc-800 bg-zinc-50'>
+          <button className='md:h-24 md:w-24 h-16 w-16 flex items-center justify-center rounded-2xl border border-zinc-100 md:p-6 p-2 dark:border-zinc-700/40 dark:bg-zinc-800 bg-zinc-50'>
             {mounted && <Image src={iconSVG(props.skill)} alt="iconskill" height={iconSize} width={iconSize} />}
           </button>
         </TooltipTrigger>

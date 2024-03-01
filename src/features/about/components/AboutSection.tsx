@@ -45,7 +45,7 @@ export const AboutSection = (props: Props) => {
               {userData.interests.map((o) => (
                 <div
                   key={o.title}
-                  className="h-32 rounded-lg border border-zinc-100 p-6 dark:border-zinc-700/40"
+                  className="lg:h-32 h-40 rounded-lg border border-zinc-100 p-6 dark:border-zinc-700/40 "
                 >
                   <div className="flex flex-row gap-x-4 items-center mb-2">
                     <o.icon className="text-devPrimary" />

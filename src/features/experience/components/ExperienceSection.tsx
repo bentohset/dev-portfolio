@@ -24,7 +24,7 @@ export const ExperienceSection = (props: Props) => {
           <h1 className='font-bold text-4xl'>My Journey</h1>
           <div className='flex flex-row gap-x-2'>
             <Button 
-              className='bg-zinc-800 font-semibold text-zinc-100 hover:bg-zinc-700 dark:bg-zinc-700 dark:hover:bg-zinc-600 text-xs pl-4' 
+              className='text-xs pl-4 font-semibold bg-zinc-100 hover:bg-zinc-200 text-zinc-800  dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:text-zinc-100' 
               size="sm"
             >
               <a
@@ -40,7 +40,7 @@ export const ExperienceSection = (props: Props) => {
               <Tooltip>
                 <TooltipTrigger asChild>
                 <Button 
-                  className='bg-zinc-800 font-semibold text-zinc-100 hover:bg-zinc-700 dark:bg-zinc-700 dark:hover:bg-zinc-600' 
+                  className='font-semibold bg-zinc-100 hover:bg-zinc-200 text-zinc-800  dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:text-zinc-100' 
                   size="sm" 
                   onClick={() => setIsMinimized(prev => !prev)}
                 >
