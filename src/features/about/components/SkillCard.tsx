@@ -9,25 +9,43 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 import { iconMap } from '../types/icon.data';
-import { Button } from '@/components/ui/button';
+import { useTheme } from 'next-themes';
 
+interface IconObj {
+  default: string;
+  dark: string;
+}
 
 type Props = {
   skill: string;
 }
 
 export const SkillCard = (props: Props) => {
-  const iconSVG = iconMap[props.skill] ?? "";
-  const matches = useMediaQuery('(min-width: 768px)')
+  const { resolvedTheme } = useTheme();
+  const matches = useMediaQuery('(min-width: 768px)');
+  const iconSize = matches ? 40 : 26;
 
-  const iconSize = matches ? 40 : 26
+  const iconSVG = (skill: string): string => {
+    if (typeof iconMap[skill] === "object") {
+      if (resolvedTheme === "dark") {
+        return (iconMap[skill] as IconObj).dark;
+      } else {
+        return (iconMap[skill] as IconObj).default;
+      }
+    } else if (typeof iconMap[skill] === "string"){
+      return iconMap[skill] as string;
+    } else {
+      return "";
+    }
+  }
+  
   return (
     <TooltipProvider delayDuration={200}>
       <Tooltip>
         <TooltipTrigger asChild>
-          <Button className='md:h-24 md:w-24 h-16 w-16 rounded-2xl border border-zinc-100 md:p-6 p-2 dark:border-zinc-700/40 dark:bg-zinc-800'>
-            <Image src={iconSVG} alt="iconskill" height={iconSize} width={iconSize} />
-          </Button>
+          <button className='md:h-24 md:w-24 h-16 w-16 rounded-2xl border border-zinc-100 md:p-6 p-2 dark:border-zinc-700/40 dark:bg-zinc-800 bg-zinc-50'>
+            <Image src={iconSVG(props.skill)} alt="iconskill" height={iconSize} width={iconSize} />
+          </button>
         </TooltipTrigger>
         <TooltipContent>
           <p className='z-50'>{props.skill}</p>

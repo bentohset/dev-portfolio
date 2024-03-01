@@ -10,13 +10,22 @@ export const icons = {
   "Go": "golang.svg",
   "SQL": "sql.svg",
   "React": "react.svg",
-  "Next.js": "next.js.svg",
-  "Flask": "flask-plain.svg",
+  "Next.js": {
+    default: "next.js.svg",
+    dark: "next.js-white.svg"
+  },
+  "Flask": {
+    default: "flask-plain.svg",
+    dark: "flask-white.svg"
+  },
   "FastAPI": "fastapi.svg",
   "TailwindCSS": "tailwindcss.svg",
   "Redis": "redis.svg",
   "Nodejs": "nodejs.svg",
-  "Express": "express-plain.svg",
+  "Express": {
+    default: "express-plain.svg",
+    dark: "express-js-white.svg"
+  },
   "ThreeJS": "threejs.svg",
   "Git/Github": "git.svg",
   "GitLab": "gitlab.svg",
@@ -30,7 +39,10 @@ export const icons = {
   "Hadoop": "hadoop.svg",
   "Google Cloud": "google-cloud.svg",
   "Microsoft Azure": "azure.svg",
-  "Amazon Web Service": "amazon-web-services.svg",
+  "Amazon Web Service": {
+    default: "amazon-web-services.svg",
+    dark: "amazon-web-services-white.svg",
+  },
   "Arduino": "arduino.svg",
   "Bash": "bash.svg",
   "Prisma ORM": "prisma-orm.svg"
@@ -38,6 +50,14 @@ export const icons = {
 
 const BASE_PATH = "/icons/tech"
 
-export const iconMap: Record<string, string> = Object.fromEntries(
-  Object.entries(icons).map(([key, value]) => [key, `${BASE_PATH}/${value}`])
+export const iconMap: Record<string, string | object> = Object.fromEntries(
+  Object.entries(icons).map(([key, value]) => {
+    if (typeof value === "object") {
+      return [key, {
+        default: `${BASE_PATH}/${value.default}`,
+        dark: `${BASE_PATH}/${value.dark}`
+      }]
+    }
+    return [key, `${BASE_PATH}/${value}`]
+  })
 );
