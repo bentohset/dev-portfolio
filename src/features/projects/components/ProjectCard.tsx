@@ -14,9 +14,9 @@ export const ProjectCard = ({ project, openModal } : {
       className='animate-in slide-in-from-top-8 fade-in duration-500 cursor-pointer rounded-xl text-left p-4 relative group hover:bg-zinc-50 hover:dark:bg-zinc-800 '
       onClick={() => openModal(project)}
     >
-      <div className='z-40'>
+      <div className='z-30'>
         <div className='md:h-40 h-52 mb-4 relative'>
-          <div className='rounded-lg h-full w-full absolute bg-black/60 z-50  animate-in fade-in duration-300 hidden group-hover:flex items-center justify-center'>
+          <div className='rounded-lg h-full w-full absolute bg-black/60 z-40  animate-in fade-in duration-300 hidden group-hover:flex items-center justify-center'>
             <div className='bg-devPrimary animate-in fade-in zoom-in rounded-lg p-2 h-12 w-12 items-center justify-center flex transition'>
               <Eye size={20} color='white'/>
             </div>
