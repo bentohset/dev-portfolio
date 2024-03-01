@@ -1,34 +1,34 @@
 import React from 'react'
 
-import { userData } from '@/lib/data'
-import { SkillCard } from '@/features/about'
-import Image from 'next/image'
-import { LinkedinIcon } from 'lucide-react'
-import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
+// import { userData } from '@/lib/data'
+// import { SkillCard } from '@/features/about'
+// import Image from 'next/image'
+// import { LinkedinIcon } from 'lucide-react'
+// import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 type Props = {}
 
 const page = async (props: Props) => {
-  const contacts = [
-    {
-        text: 'Linkedin',
-        link: userData.contacts.linkedin,
-        logo: FaLinkedin,
-    },
-    {
-        text: 'Github',
-        link: userData.contacts.github,
-        logo: FaGithub,
-    },
-    {
-        text: 'Email',
-        link: userData.contacts.email,
-        logo: FaEnvelope,
-    },
-]
+//   const contacts = [
+//     {
+//         text: 'Linkedin',
+//         link: userData.contacts.linkedin,
+//         logo: FaLinkedin,
+//     },
+//     {
+//         text: 'Github',
+//         link: userData.contacts.github,
+//         logo: FaGithub,
+//     },
+//     {
+//         text: 'Email',
+//         link: userData.contacts.email,
+//         logo: FaEnvelope,
+//     },
+// ]
   return (
     <div className='space-y-12 pb-12'>
-      <section className='grid md:grid-cols-5 grid-cols-1 md:gap-12 gap-4 animate-in slide-in-from-top-8 fade-in duration-500'>
+      {/* <section className='grid md:grid-cols-5 grid-cols-1 md:gap-12 gap-4 animate-in slide-in-from-top-8 fade-in duration-500'>
         <div className='space-y-4 md:col-span-3 col-span-1 order-2 md:order-1'>
           <div className='space-y-4'>
             <h1 className='font-bold text-4xl'>Benjamin Toh</h1>
@@ -107,7 +107,7 @@ const page = async (props: Props) => {
           ))}
         </div>
 
-      </section>
+      </section> */}
     </div>
   )
 }

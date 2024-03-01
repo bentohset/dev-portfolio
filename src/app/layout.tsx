@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/features/navbar";
+import { Navbar, ScrollTopButton } from "@/features/navbar";
 import { ThemeProvider } from "@/context/theme-provider";
 import { Footer } from "@/features/footer";
 import { cn } from "@/lib/utils";
@@ -33,6 +33,7 @@ export default function RootLayout({
               <div className="flex min-h-screen md:px-24 px-8 pt-8 pb-12">
                 {children}
               </div>
+              <ScrollTopButton />
               <Footer />
             </div>
           </div>

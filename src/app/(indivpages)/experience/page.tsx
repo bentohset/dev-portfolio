@@ -1,22 +1,22 @@
 "use client";
 
-import { Button } from '@/components/ui/button'
-import { ArrowDown, Maximize, Minimize } from 'lucide-react'
-import React, { useState } from 'react'
-import { achievementsData, experiencesData } from '@/lib/data';
-import { ExperienceType, TimelineRow } from '@/features/experience';
-import { AchievementRow } from '@/features/experience/components/AchievementRow';
+// import { Button } from '@/components/ui/button'
+// import { ArrowDown, Maximize, Minimize } from 'lucide-react'
+import React from 'react'
+// import { achievementsData, experiencesData } from '@/lib/data';
+// import { ExperienceType, TimelineRow } from '@/features/experience';
+// import { AchievementRow } from '@/features/experience/components/AchievementRow';
 
 type Props = {}
 
 const page = (props: Props) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const [isMinimized, setIsMinimized] = useState(false);
-  const exps:ExperienceType[] = experiencesData;
+  // const [isMinimized, setIsMinimized] = useState(false);
+  // const exps:ExperienceType[] = experiencesData;
 
   return (
     <div className='space-y-12 pb-12 w-full'>
-      <section className='w-full space-y-4'>
+      {/* <section className='w-full space-y-4'>
         <div className='flex flex-row justify-between w-full'>
           <h1 className='font-bold text-2xl'>My Journey</h1>
           <div className='flex flex-row gap-x-2'>
@@ -53,7 +53,7 @@ const page = (props: Props) => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

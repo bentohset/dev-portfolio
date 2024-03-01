@@ -20,7 +20,7 @@ export const ExperienceSection = (props: Props) => {
   return (
     <div className='space-y-12 py-24 w-full' id="experience">
       <section className='w-full space-y-4'>
-        <div className='flex flex-row justify-between w-full'>
+        <div className='flex md:flex-row flex-col space-y-4 md:space-y-0 justify-between w-full'>
           <h1 className='font-bold text-4xl'>My Journey</h1>
           <div className='flex flex-row gap-x-2'>
             <Button 

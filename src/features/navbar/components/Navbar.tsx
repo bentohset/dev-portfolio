@@ -8,15 +8,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import ThemeToggle from './ThemeToggle';
-
-type Props = {}
-
-const navigation = [
-  { name: "About", href: "/#about" },
-  { name: "Projects", href: "/#projects" },
-  { name: "Experience", href: "/#experience" },
-  { name: "Blog", href: "/blog" },
-];
+import { navigation } from '@/lib/data';
 
 export function Navbar() {
   const path = usePathname();
@@ -61,8 +53,8 @@ export function Navbar() {
                         href={item.href}
                         className={cn(
                           path === item.href
-                            ? "underline decoration-2 underline-offset-4"
-                            : "hover:underline hover:decoration-2 hover:underline-offset-4",
+                            ? "text-devPrimary"
+                            : "hover:text-devPrimary",
                           "rounded-md px-3 py-2 text-sm ",
                         )}
                         aria-current={path === item.href ? "page" : undefined}
