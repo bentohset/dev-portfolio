@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/context/theme-provider";
 import { Footer } from "@/features/footer";
 import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], display: 'swap' });
 
 export const metadata: Metadata = {
   title: "Benjamin Toh's Website",
