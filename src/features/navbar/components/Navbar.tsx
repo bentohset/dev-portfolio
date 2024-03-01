@@ -12,9 +12,9 @@ import ThemeToggle from './ThemeToggle';
 type Props = {}
 
 const navigation = [
-  { name: "About", href: "/about" },
-  { name: "Projects", href: "/projects" },
-  { name: "Experience", href: "/experience" },
+  { name: "About", href: "/#about" },
+  { name: "Projects", href: "/#projects" },
+  { name: "Experience", href: "/#experience" },
   { name: "Blog", href: "/blog" },
 ];
 

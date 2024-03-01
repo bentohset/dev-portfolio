@@ -8,6 +8,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 import { iconMap } from '../types/icon.data';
+import { Button } from '@/components/ui/button';
 
 
 type Props = {
@@ -19,11 +20,10 @@ export const SkillCard = (props: Props) => {
   return (
     <TooltipProvider delayDuration={200}>
       <Tooltip>
-        <TooltipTrigger>
-          <button className='h-24 w-24 rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 dark:bg-zinc-800'>
+        <TooltipTrigger asChild>
+          <Button className='h-24 w-24 rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 dark:bg-zinc-800'>
             <Image src={iconSVG} alt="iconskill" height={40} width={40} />
-          </button>
-          
+          </Button>
         </TooltipTrigger>
         <TooltipContent>
           <p className='z-50'>{props.skill}</p>

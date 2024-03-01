@@ -13,7 +13,8 @@ export const experiencesData = [
         ],
         concise: "",
         points: [
-            "Working in a team of 10 to build a volunteer management system for a Non-Profit Orgnaisation MINDS MYG Singapore catered towards special needs beneficiaries."
+            "Optimized and developed new features for a scalable cloud-native Cloud Operations platform that provides info-comm security and compliance services across 55+ public service agencies with React, Node.js and Azure Functions",
+            "Reduced Azure DevOps CI/CD pipeline execution time by 45% by upgrading and migrating to a modern framework"
         ],
 
     },
@@ -27,7 +28,7 @@ export const experiencesData = [
         ],
         concise: "",
         points: [
-            "Working in a team of 10 to build a volunteer management system for a Non-Profit Orgnaisation MINDS MYG Singapore catered towards special needs beneficiaries."
+            "Developed a full-stack volunteer management system in a cross-functional team for a Non-Profit Orgnaisation to manage 10,000+ volunteers using Next.js, TypeScript, Express, Node.js, Docker and PostgreSQL."
         ],
 
     },
@@ -245,7 +246,7 @@ export const projectsData: ProjectType[] = [
 ]
 
 export const userData = {
-    resumeUrl: "https://drive.google.com/file/d/1FHdhDG5VQEvKlY3sfuHknhDeBM0JL-c9/view?usp=sharing",
+    resumeUrl: "/resume-ben.pdf",
     contacts: {
         linkedin: "https://www.linkedin.com/in/ben-toh",
         github: "https://github.com/bentohset",
