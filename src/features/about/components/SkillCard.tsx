@@ -21,7 +21,7 @@ type Props = {
 }
 
 export const SkillCard = (props: Props) => {
-  const { theme } = useTheme();
+  const { resolvedTheme: theme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const matches = useMediaQuery('(min-width: 768px)');
   const iconSize = matches ? 40 : 26;

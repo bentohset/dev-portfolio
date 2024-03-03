@@ -9,12 +9,13 @@ import { cn } from "@/lib/utils";
 import ThemeToggle from "./ThemeToggle";
 import { navigation } from "@/lib/data";
 import {
-  Dialog,
-  DialogClose,
-  DialogContent,
-  DialogHeader,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
 import { Menu } from "lucide-react";
 
 export function Navbar() {
@@ -60,8 +61,8 @@ export function Navbar() {
                 
                 <section className="flex flex-row gap-x-4">
                   <div className="flex items-center sm:hidden">
-                    <Dialog>
-                      <DialogTrigger asChild>
+                    <Sheet>
+                      <SheetTrigger asChild>
                         <button className="rounded-full bg-white px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition dark:bg-zinc-800 dark:ring-white/10 dark:hover:ring-white/20">
                           <Menu
                             size={20}
@@ -69,32 +70,33 @@ export function Navbar() {
                             aria-hidden="true"
                           />
                         </button>
-                      </DialogTrigger>
-                      <DialogContent className="rounded-2xl w-5/6 h-fit top-44">
-                        <DialogHeader>
+                      </SheetTrigger>
+                      <SheetContent>
+                        <SheetHeader>
+                          <SheetTitle>Menu</SheetTitle>
                           <div className="flex flex-col w-full text-left justify-center items-center space-y-2 font-medium text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                             {navigation.map((item) => (
-                              <DialogClose asChild key={item.name}>
-                              <Link
-                                href={item.href}
-                                className={cn(
-                                  path === item.href
-                                    ? "text-devPrimary"
-                                    : "hover:text-devPrimary",
-                                  "rounded-md px-3 py-2 text-md w-full self-center"
-                                )}
-                                aria-current={
-                                  path === item.href ? "page" : undefined
-                                }
-                              >
-                                {item.name}
-                              </Link>
-                              </DialogClose>
+                              <SheetClose asChild key={item.name}>
+                                <Link
+                                  href={item.href}
+                                  className={cn(
+                                    path === item.href
+                                      ? "text-devPrimary"
+                                      : "hover:text-devPrimary",
+                                    "rounded-md px-3 py-2 text-md w-full self-center"
+                                  )}
+                                  aria-current={
+                                    path === item.href ? "page" : undefined
+                                  }
+                                >
+                                  {item.name}
+                                </Link>
+                              </SheetClose>
                             ))}
                           </div>
-                        </DialogHeader>
-                      </DialogContent>
-                    </Dialog>
+                        </SheetHeader>
+                      </SheetContent>
+                    </Sheet>
                   </div>
                   <div className="flex shrink-0 items-center justify-center">
                     <ThemeToggle />

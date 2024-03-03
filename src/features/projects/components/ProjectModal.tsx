@@ -31,7 +31,7 @@ export const ProjectModal = (props: Props) => {
   return (
     <Dialog open={props.isOpen} onOpenChange={props.toggleOpen}>
       <DialogContent className="w-11/12 h-fit max-h-[640px] max-w-none overflow-y-scroll">
-        <div className='flex md:flex-row-reverse flex-col'>
+        <div className='flex md:flex-row-reverse flex-col mt-6'>
         <div className='md:w-1/2 w-full h-2/3 flex items-center justify-center self-center p-2'>
             <Image src={imageUrl} alt="projimg" height={0} width={0} sizes={"100vw"} className='object-contain h-fit w-full rounded-lg'/>
           </div>
