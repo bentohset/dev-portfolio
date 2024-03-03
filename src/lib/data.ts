@@ -248,8 +248,8 @@ export const userData = {
             icon: TerminalSquare,
         },
         {
-            title: "Machine/Deep Learning",
-            desc: "Computer brain go brrrr",
+            title: "Machine Learning",
+            desc: "Big computer brain",
             icon: BrainCog,
         },
         {

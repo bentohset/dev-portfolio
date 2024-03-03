@@ -15,7 +15,7 @@ export const ProjectCard = ({ project, openModal } : {
       onClick={() => openModal(project)}
     >
       <div className='z-30'>
-        <div className='md:h-40 h-52 mb-4 relative'>
+        <div className='md:h-40 h-44 mb-4 relative'>
           <div className='rounded-lg h-full w-full absolute bg-black/60 z-40  animate-in fade-in duration-300 hidden group-hover:flex items-center justify-center'>
             <div className='bg-devPrimary animate-in fade-in zoom-in rounded-lg p-2 h-12 w-12 items-center justify-center flex transition'>
               <Eye size={20} color='white'/>

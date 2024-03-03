@@ -48,7 +48,7 @@ export const AboutSection = (props: Props) => {
                   className="lg:h-32 h-40 rounded-lg border border-zinc-100 p-6 dark:border-zinc-700/40 "
                 >
                   <div className="flex flex-row gap-x-4 items-center mb-2">
-                    <o.icon className="text-devPrimary" />
+                    <o.icon className="text-devPrimary shrink-0 md:size-6 size-5" />
                     <h1 className="font-bold text-sm">{o.title}</h1>
                   </div>
                   <p className="text-sm text-zinc-600 dark:text-zinc-400">
