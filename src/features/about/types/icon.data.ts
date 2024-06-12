@@ -45,7 +45,9 @@ export const icons = {
   },
   "Arduino": "arduino.svg",
   "Bash": "bash.svg",
-  "Prisma ORM": "prisma-orm.svg"
+  "Prisma ORM": "prisma-orm.svg",
+  "Rust": "rust.svg",
+  "Fiber": "fiber.svg",
 }
 
 const BASE_PATH = "/icons/tech"
