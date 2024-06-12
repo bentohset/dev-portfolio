@@ -1,6 +1,6 @@
 import { AchievementType } from "@/features/experience";
 import { ProjectType } from "@/features/projects";
-import { BrainCog, Cat, Cloud, TerminalSquare } from "lucide-react";
+import { BrainCog, Cat, GaugeCircleIcon, TerminalSquare } from "lucide-react";
 
 export const experiencesData = [
     {
@@ -97,6 +97,20 @@ export const achievementsData: AchievementType[] = [
 ]
 
 export const projectsData: ProjectType[] = [
+    {
+        title: 'WhatTimeMeet',
+        type: "self",
+        desc: 'Modern Meeting Scheduler',
+        image: '/whattimemeet.png',
+        url: 'https://whattimemeet.com',
+        github: 'https://github.com/bentohset/whattimemeet',
+        summary: `Whattimemeet is a lightweight and <span style='color: #CEA5FB;'}>modern meeting scheduler</span> for quick meetings on the go. \
+            It is an <span style='color: #CEA5FB;'}>improvement</span> from the well-known When2meet scheduler by improving its <span style='color: #CEA5FB;'}>responsiveness and load times</span>. \
+            <br/><br/> \
+            It is built with <span style='color: #CEA5FB;'}>performance</span> in mind and utilizes an efficient backend server written in <span style='color: #CEA5FB;'}>Go</span>`,
+        stack: ['Next.js', 'React', 'TypeScript', 'Go', 'Fiber', 'PostgreSQL', 'AWS EC2', 'Docker'],
+
+    },
     {
         title: 'Luna AI',
         type: "hack",
@@ -253,9 +267,9 @@ export const userData = {
             icon: BrainCog,
         },
         {
-            title: "Cloud Computing",
-            desc: "How to deploy a server in 2024: click button",
-            icon: Cloud,
+            title: "Distributed Systems",
+            desc: "I can count to 1000 fast",
+            icon: GaugeCircleIcon,
         },
         {
             title: "Cats",
@@ -264,14 +278,14 @@ export const userData = {
         }
     ],
     skills: {
-        languages: ['C', 'C++', 'Python', 'Javascript', 'Typescript', 'Java', 'HTML', 'CSS', 'Go', 'SQL'],
-        frameworks: ['React', 'Next.js', 'Flask', 'FastAPI', 'TailwindCSS', 'Nodejs', 'Express', 'ThreeJS'],
+        languages: ['C', 'C++', 'Rust', 'Go', 'Python', 'Javascript', 'Typescript', 'Java', 'HTML', 'CSS', 'SQL'],
+        frameworks: ['Nodejs', 'Fiber', 'Express', 'Flask', 'FastAPI', 'React', 'Next.js', 'ThreeJS'],
         tools: ['Git/Github', 'GitLab', 'Docker', 'Figma', 'Kubernetes', 'Terraform', 'Hadoop'],
         database:['MongoDB', 'PostgreSQL', 'Redis', 'Google Cloud', 'Microsoft Azure', 'Amazon Web Service'],
     },
     about: {
         title: 'Aspiring Software Engineer',
-        bio: "I am a penultimate year <span style='color: #CEA5FB;'}>Computer Engineering</span> student at the National University of Singapore (NUS) with a minor in <span style='color: #CEA5FB;'}>Data Engineering</span>. I have a keen interest in software engineering, data pipelines, machine learning, databases and everything in between!",
+        bio: "I am a penultimate year <span style='color: #CEA5FB;'}>Computer Engineering</span> student at the National University of Singapore (NUS) with a minor in <span style='color: #CEA5FB;'}>Data Engineering</span>. I have a keen interest in software engineering, distributed systems, machine learning, databases and everything in between!",
         iLove: ["building things", "simplicity", "efficiency", "tech for good", "exploring new tech", "creating problems", "solving problems", "new experiences", "discussing tech"]
     },
 };
