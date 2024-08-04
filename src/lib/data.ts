@@ -5,16 +5,33 @@ import { BrainCog, Cat, GaugeCircleIcon, TerminalSquare } from "lucide-react";
 export const experiencesData = [
     {
         role: "Software Engineer Intern",
+        company: "SAP, Singapore",
+        logo: "/icons/exp/sap.png",
+        period: "Jul 2024 - Present",
+        skills: [
+            "Kubernetes", "Python", "Go", "Flask"
+        ],
+        concise: "Developed and optimized features for a highly available and scalable distributed infrastructure for training and serving machine learning models",
+        points: [
+            "Developed and optimized features for a highly available and scalable distributed infrastructure for training and serving machine learning models using Kubernetes, Python and Go.",
+            "Enhanced the resiliency of a Python proxy server by implementing load balancing strategies, resulting in improved performance and reliability under high traffic conditions."
+        ],
+
+    },
+    {
+        role: "Software Engineer Intern",
         company: "GovTech Singapore",
         logo: "/icons/exp/govtech.png",
-        period: "Aug 2023 - Present",
+        period: "Jan 2024 - Jun 2024",
         skills: [
-            "Next.js", "TypeScript", "Node.js", "Express"
+            "Node.js", "Azure Functions", "React", "GitLab"
         ],
         concise: "Optimized and developed new features for a Cloud Operations Management Platform for 55+ Singapore government agencies",
         points: [
             "Optimized and developed new features for a scalable cloud-native Cloud Operations platform that provides info-comm security and compliance services across 55+ public service agencies with React, Node.js and Azure Functions",
-            "Reduced Azure DevOps CI/CD pipeline execution time by 45% by upgrading and migrating to a modern framework"
+            "Reduced Azure DevOps CI/CD pipeline execution time by 45% by upgrading and migrating to a modern framework",
+            "Optimized backend REST API loading time by 35% through effective optimization strategies",
+            "Implemented an end-to-end testing framework in Playwright leading to a significant decrease in production bugs"
         ],
 
     },
@@ -22,13 +39,14 @@ export const experiencesData = [
         role: "Software Engineer",
         company: "Google Developer Student Club NUS",
         logo: "/icons/exp/gdsc.png",
-        period: "Aug 2023 - Present",
+        period: "Aug 2023 - Apr 2024",
         skills: [
             "Next.js", "TypeScript", "Node.js", "Express"
         ],
         concise: "Developed a volunteer management system for a Non-Profit Orgnaisation to manage 10,000+ volunteers",
         points: [
-            "Developed a full-stack volunteer management system in a cross-functional team for a Non-Profit Orgnaisation to manage 10,000+ volunteers using Next.js, TypeScript, Express, Node.js, Docker and PostgreSQL."
+            "Developed a full-stack volunteer management system in a cross-functional team for a Non-Profit Orgnaisation to manage 10,000+ volunteers using Next.js, TypeScript, Express, Node.js, Docker and PostgreSQL.",
+            "Implemented integration with AWS S3 for seamless and efficient data storage of secure files."
         ],
 
     },
@@ -249,7 +267,7 @@ export const projectsData: ProjectType[] = [
 ]
 
 export const userData = {
-    resumeUrl: "/resume-ben.pdf",
+    resumeUrl: "https://www.overleaf.com/project/64d1febe616ce90ea4d190f1",
     contacts: {
         linkedin: "https://www.linkedin.com/in/ben-toh",
         github: "https://github.com/bentohset",
@@ -285,7 +303,7 @@ export const userData = {
     },
     about: {
         title: 'Aspiring Software Engineer',
-        bio: "I am a penultimate year <span style='color: #CEA5FB;'}>Computer Engineering</span> student at the National University of Singapore (NUS) with a minor in <span style='color: #CEA5FB;'}>Data Engineering</span>. I have a keen interest in software engineering, distributed systems, machine learning, databases and everything in between!",
+        bio: "I am a final year <span style='color: #CEA5FB;'}>Computer Engineering</span> student at the National University of Singapore (NUS) with a minor in <span style='color: #CEA5FB;'}>Data Engineering</span>. I have a keen interest in software engineering, distributed systems, machine learning, databases and everything in between!",
         iLove: ["building things", "simplicity", "efficiency", "tech for good", "exploring new tech", "creating problems", "solving problems", "new experiences", "discussing tech"]
     },
 };
