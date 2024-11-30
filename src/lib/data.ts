@@ -13,8 +13,10 @@ export const experiencesData = [
         ],
         concise: "Developed and optimized features for a highly available and scalable distributed infrastructure for training and serving machine learning models",
         points: [
-            "Developed and optimized features for a highly available and scalable distributed infrastructure for training and serving machine learning models using Kubernetes, Python and Go.",
-            "Enhanced the resiliency of a Python proxy server by implementing load balancing strategies, resulting in improved performance and reliability under high traffic conditions."
+            "Developed and optimized features for a highly available and scalable distributed infrastructure for training and serving machine learning models using Kubernetes, Docker, Python and Go.",
+            "Enhanced the availability of a high-volume Python proxy server by implementing load balancing and retry strategies, resulting in improved performance and reliability under high traffic conditions.",
+            "Made open-source contributions to KServe in Python and Go, enhancing system flexibility to product needs.",
+            "Implemented circuit breaker pattern for microservices within a distributed system using Kubernetes, Istio and Python to enhance resiliency of a proxy server."
         ],
 
     },
