@@ -1,3 +1,4 @@
+import { BlogType } from "@/features/blogs";
 import { AchievementType } from "@/features/experience";
 import { ProjectType } from "@/features/projects";
 import { BrainCog, Cat, GaugeCircleIcon, TerminalSquare } from "lucide-react";
@@ -266,6 +267,29 @@ export const projectsData: ProjectType[] = [
             It also serves as my stint to learn ThreeJS, blender and 3d modelling to explore new technologies.`,
         stack: ['Next.js', 'TypeScript', 'ThreeJS', 'Blender', 'MagicaVoxel'],
     },
+]
+
+export const blogsData: BlogType[] = [
+  {
+    title: "Concurrency in C++, Go and Rust",
+    subtitle: "A deep dive into common concurrency features offered in C++, Go and Rust. \
+      The different concurrency paradigms - Locking, Channels and Asynchronous - will be discussed along with how one should design software with respect to concurrency and parallelism.",
+    url: "https://medium.com/@bentohset",
+    platform: "Medium",
+    topics: ["tech", "theory"],
+    date: "Dec 12 2024",
+    image: "concurrency.png"
+  },
+  {
+    title: "Learning Vim and Neovim",
+    subtitle: "Venturing into the depths of Vim, a word which strikes fear in the hearts of many. \
+      How I started picking up Vim and subsequently Neovim for my development environment, and why you should too.",
+    url: "https://medium.com/@bentohset",
+    platform: "Medium",
+    topics: ["tech", "lifestyle"],
+    date: "Dec 12 2024",
+    image: "vim-neovim.jpg"
+  }
 ]
 
 export const userData = {
