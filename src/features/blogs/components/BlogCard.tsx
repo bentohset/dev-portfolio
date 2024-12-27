@@ -31,7 +31,7 @@ export const BlogCard = ({ blog } : {
 
           <div className='my-2 flex gap-x-2'>
             {blog.topics.map((o) => (
-              <Badge variant='secondary' className='cursor-default disabled:pointer-events-none disabled:cursor-default'>
+              <Badge variant='secondary' className='cursor-default disabled:pointer-events-none disabled:cursor-default' key={o}>
                 <p className='text-xs text-background text-zinc-600 dark:text-white'>{o}</p>
               </Badge>
             ))}
