@@ -7,7 +7,6 @@ type Props = {}
 
 export const BlogSection = (props: Props) => {
   const blogs: BlogType[] = blogsData;
-  console.log(blogsData)
   return (
     <div className='w-full'>
       <h1 className='font-bold text-4xl'>My Blogs</h1>
