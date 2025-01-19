@@ -8,7 +8,7 @@ type Props = {
 };
 
 export const BlogSection = (props: Props) => {
-  const blogs: BlogType[] = props.data.map((o: NotionObject) => {
+  const blogs: BlogType[] = (props.data as NotionObject[]).map((o: NotionObject) => {
     const props = o.properties;
     const date = props['Publication Date'].date.start;
     const dateObject = new Date(date) ?? null;
@@ -18,13 +18,13 @@ export const BlogSection = (props: Props) => {
       year: "numeric"
     };
     const formattedDate = dateObject.toLocaleDateString("en-US", options) ?? "";
-    const tags = props.Tags['multi_select']?.map((o: NotionMultiSelect) => o.name || []);
+    const tags = props.Tags['multi_select']?.map((o: NotionMultiSelect) => o.name || "");
     return {
       title: props.Name.title[0]['plain_text'] || "",
       subtitle: props?.Subtitle?.rich_text[0]['plain_text'] || "",
       image: props.Image.files[0].file.url || "",
       url: props.URL.url || "",
-      topics: tags || [],
+      topics: tags,
       platform: props.Platform.select.name || "",
       date: formattedDate || "",
     };

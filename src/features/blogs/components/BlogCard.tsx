@@ -9,6 +9,7 @@ import { Badge } from '@/components/ui/badge';
 export const BlogCard = ({ blog } : {
   blog: BlogType;
 }) => {
+  const imgUrl = blog.image ?? "";
   return (
     <Link href={blog.url} rel="noopener noreferrer" target="_blank">
       <div
@@ -16,7 +17,7 @@ export const BlogCard = ({ blog } : {
       >
         <div className='z-30'>
           <div className='md:h-60 h-60 mb-4 relative'>
-            <Image src={blog.image} alt={blog.title}
+            <Image src={imgUrl} alt={blog.title}
               className='object-cover w-full h-full rounded-lg'
               sizes="100vw"
               width={0}

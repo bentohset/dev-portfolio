@@ -3,7 +3,7 @@
 import { BlogSection } from '@/features/blogs'
 import React from 'react'
 
-export async function getBlogs() {
+async function getBlogs() {
   const db_id = process.env.NOTION_DB_ID || "";
   const api_key = process.env.NOTION_API_KEY || "";
 
