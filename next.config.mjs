@@ -7,6 +7,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'prod-files-secure.s3.*', // for notion uploaded pics
       },
+      {
+        protocol: 'https',
+        hostname: '**.amazonaws.com', // for notion uploaded pics
+      },
+
     ],
   },
 };
