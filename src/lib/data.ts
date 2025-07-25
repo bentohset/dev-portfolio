@@ -5,6 +5,19 @@ import { BrainCog, Cat, GaugeCircleIcon, TerminalSquare } from "lucide-react";
 
 export const experiencesData = [
     {
+        role: "Software Engineer",
+        company: "ByteDance, Singapore",
+        logo: "/icons/exp/bytedance.png",
+        period: "Jan 2025 - Present",
+        skills: [
+            "Java", "C++", "Go", "HDFS"
+        ],
+        concise: "",
+        points: [
+        ],
+
+    },
+    {
         role: "Software Engineer Intern",
         company: "SAP, Singapore",
         logo: "/icons/exp/sap.png",
@@ -118,6 +131,19 @@ export const achievementsData: AchievementType[] = [
 ]
 
 export const projectsData: ProjectType[] = [
+    {
+        title: 'Cents',
+        type: "self",
+        desc: 'Finance Tracker iOS App',
+        image: '/cents.png',
+        url: 'https://apps.apple.com/app/id6747306900',
+        summary: `Cents is a  <span style='color: #CEA5FB;'}>finance tracking iOS app</span> meant to be 100% free with no ads and paywalls. \
+            It has a minimal iOS-centric design with powerful features that help you manage your finances and budgets with ease. \
+            <br/><br/> \
+            It is built with <span style='color: #CEA5FB;'}>SwiftUI</span> for native performance.`,
+        stack: ['Swift', 'SwiftUI'],
+
+    },
     {
         title: 'WhatTimeMeet',
         type: "self",
@@ -322,14 +348,14 @@ export const userData = {
         }
     ],
     skills: {
-        languages: ['C', 'C++', 'Rust', 'Go', 'Python', 'Javascript', 'Typescript', 'Java', 'HTML', 'CSS', 'SQL'],
-        frameworks: ['Nodejs', 'Fiber', 'Express', 'Flask', 'FastAPI', 'React', 'Next.js', 'ThreeJS'],
+        languages: ['C', 'C++', 'Java', 'Go', 'Python', 'Rust', 'Javascript', 'SQL', 'Swift'],
+        frameworks: ['SpringBoot', 'Nodejs', 'Fiber', 'Express', 'Flask', 'FastAPI', 'React', 'Next.js', 'SwiftUI'],
         tools: ['Git/Github', 'GitLab', 'Docker', 'Figma', 'Kubernetes', 'Terraform', 'Hadoop'],
-        database:['MongoDB', 'PostgreSQL', 'Redis', 'Google Cloud', 'Microsoft Azure', 'Amazon Web Service'],
+        database:['MySQL', 'MongoDB', 'PostgreSQL', 'Redis', 'Google Cloud', 'Microsoft Azure', 'Amazon Web Service'],
     },
     about: {
-        title: 'Aspiring Software Engineer',
-        bio: "I am a final year <span style='color: #CEA5FB;'}>Computer Engineering</span> student at the National University of Singapore (NUS) with a minor in <span style='color: #CEA5FB;'}>Data Engineering</span>. I have a keen interest in software engineering, distributed systems, machine learning, databases and everything in between!",
+        title: 'Software Engineer',
+        bio: "I am a Software Engineer at ByteDance and a <span style='color: #CEA5FB;'}>Computer Engineering</span> graduate from the National University of Singapore (NUS) with a minor in <span style='color: #CEA5FB;'}>Data Engineering</span>. I have a keen interest in software engineering, distributed systems, machine learning, databases and everything in between!",
         iLove: ["building things", "simplicity", "efficiency", "tech for good", "exploring new tech", "creating problems", "solving problems", "new experiences", "discussing tech"]
     },
 };

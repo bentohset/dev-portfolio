@@ -48,6 +48,9 @@ export const icons = {
   "Prisma ORM": "prisma-orm.svg",
   "Rust": "rust.svg",
   "Fiber": "fiber.svg",
+  "SpringBoot": "spring-boot.svg",
+  "Swift": "swift.svg",
+  "SwiftUI": "swiftui.svg"
 }
 
 const BASE_PATH = "/icons/tech"
